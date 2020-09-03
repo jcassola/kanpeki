@@ -13,4 +13,12 @@ class MainController extends Controller
             ->get();
         return view('events', $events);
     }
+    public function storeEvent(Request $request){
+        $event = new Event();
+        $event->description = $request->input('description');
+        if($request->hasFile('picture')){
+            $event->picture = $request->picture->store('public');
+        }
+        $event->save();
+    }
 }

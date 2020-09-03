@@ -21,6 +21,9 @@ Route::get('/events', 'MainController@returnEvents');
 Route::view('/events/new', 'newEvent')
     ->middleware('auth');
 
+Route::post('/events/new', 'MainController@storeEvent')
+    ->middleware('auth');
+
 //Route::get('/login', function () {
 //    return view('login');
 //});
