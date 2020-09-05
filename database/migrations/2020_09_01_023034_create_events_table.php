@@ -15,8 +15,9 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('picture', 50);
+            $table->longText('title');
             $table->longText('description');
+            $table->string('picture', 50);
             $table->dateTime('created_at')->useCurrent();
         });
     }
