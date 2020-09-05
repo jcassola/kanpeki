@@ -18,12 +18,19 @@ Route::view('/about', 'about');
 
 Route::get('/events', 'MainController@returnEvents');
 
+Route::get('/authors', 'MainController@returnAuthors');
+
 Route::view('/events/new', 'newEvent')
     ->middleware('auth');
 
 Route::post('/events/new', 'MainController@storeEvent')
     ->middleware('auth');
 
+Route::view('/authors/new', 'newAuthor')
+    ->middleware('auth');
+
+Route::post('/authors/new', 'MainController@storeAuthor')
+    ->middleware('auth');
 //Route::get('/login', function () {
 //    return view('login');
 //});
