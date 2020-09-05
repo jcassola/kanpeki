@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 
 use App\Author;
 use App\Event;
+use App\Item;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -17,6 +18,10 @@ class MainController extends Controller
     public function returnAuthors(){
         $authors = Author::paginate(10);
         return view('authors', $authors);
+    }
+    public function showStore(){
+        $items = Item::paginate(10);
+        return view('store', $items);
     }
     public function storeAuthor(Request $request){
         $request->validate([
@@ -49,5 +54,22 @@ class MainController extends Controller
         }
         $event->save();
         return redirect('/events');
+    }
+    public function storeItem(Request $request){
+        $request->validate([
+            'title' => 'required',
+            'description' => 'required|max:300',
+            'price' => 'required'
+        ]);
+
+        $item = new Item();
+        $item->title = $request->input('title');
+        $item->description = $request->input('description');
+        $item->price = $request->input('price');
+        if($request->hasFile('picture')){
+            $item->picture = $request->picture->store('public');
+        }
+        $item->save();
+        return redirect('/store');
     }
 }

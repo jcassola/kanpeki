@@ -20,6 +20,8 @@ Route::get('/events', 'MainController@returnEvents');
 
 Route::get('/authors', 'MainController@returnAuthors');
 
+Route::get('/store', 'MainController@showStore');
+
 Route::view('/events/new', 'newEvent')
     ->middleware('auth');
 
@@ -30,6 +32,12 @@ Route::view('/authors/new', 'newAuthor')
     ->middleware('auth');
 
 Route::post('/authors/new', 'MainController@storeAuthor')
+    ->middleware('auth');
+
+Route::view('/store/newItem', 'newItem')
+    ->middleware('auth');
+
+Route::post('/authors/newItem', 'MainController@storeItem')
     ->middleware('auth');
 //Route::get('/login', function () {
 //    return view('login');
