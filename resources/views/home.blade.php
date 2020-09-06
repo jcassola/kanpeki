@@ -15,13 +15,13 @@
         <!-- The slideshow -->
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="la.jpg" alt="Los Angeles" width="1100" height="500">
+            <img src="{{ asset('images/photo1.jpg') }}" alt="Los Angeles" width="1100" height="500">
           </div>
           <div class="carousel-item">
-            <img src="chicago.jpg" alt="Chicago" width="1100" height="500">
+            <img src="{{ asset('images/photo2.jpg') }}" alt="Chicago" width="1100" height="500">
           </div>
           <div class="carousel-item">
-            <img src="ny.jpg" alt="New York" width="1100" height="500">
+            <img src="{{ asset('images/photo3.jpg') }}" alt="New York" width="1100" height="500">
           </div>
         </div>
 
@@ -32,23 +32,6 @@
         <a class="carousel-control-next" href="#demo" data-slide="next">
           <span class="carousel-control-next-icon"></span>
         </a>
-    </div>
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">Dashboard</div>
-
-                <div class="card-body">
-                    @if (session('status'))
-                        <div class="alert alert-success" role="alert">
-                            {{ session('status') }}
-                        </div>
-                    @endif
-
-                    You are logged in!
-                </div>
-            </div>
-        </div>
     </div>
 </div>
 @endsection
