@@ -70,6 +70,8 @@
         <main class="py-4">
             @yield('content')
         </main>
+
+        <app-footer></app-footer>
     </div>
 </body>
 </html>
