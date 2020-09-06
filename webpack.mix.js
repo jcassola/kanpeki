@@ -12,10 +12,24 @@ const mix = require("laravel-mix");
  |
  */
 
-mix.js("resources/js/app.js", "public/js")
-    .sass("resources/sass/app.scss", "public/css")
-    .copy('resources/assets/images', 'public/images')
-    .browserSync({
-        proxy: process.env.APP_URL,
-        open: false
-    });
+mix
+  .js("resources/js/app.js", "public/js")
+  .sass("resources/sass/app.scss", "public/css")
+  .copy("resources/assets/images", "public/images")
+  .webpackConfig({
+    module: {
+      rules: [
+        {
+          enforce: "pre",
+          test: /\.(js|vue)$/,
+          loader: "eslint-loader",
+          exclude: /node_modules/
+        }
+      ]
+    }
+  })
+  .browserSync({
+    /*eslint-disable */
+    proxy: process.env.APP_URL,
+    open: false
+  });
