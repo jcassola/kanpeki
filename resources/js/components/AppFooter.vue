@@ -1,10 +1,73 @@
 <template>
   <footer>
+    <div class="jumbotron-fluid bg-dark text-white pt-5 footer">
       <div class="container">
-          <div class="footer">
-            <p>Copyright by &copyKanpeki-Sa</p>
+        <div class="row">
+          <div class="col-12 col-md-4 text-center">
+            <img
+              src="/images/logo.jpg"
+              alt="Logo de ZaruArquitectura"
+              class="site-logo text-center"
+            />
+            <p>
+              Natus eget occaecati, lobortis, vestibulum nam eros, risus lacinia
+              lacus.Lorem accusantium.
+            </p>
           </div>
+          <div class="col-12 col-md-4">
+            <h3 class="padding-bottom-40 text-center">Contact details</h3>
+            <ul class="fa-ul margin-left-25">
+              <li class="padding-bottom-20 padding-left-5">
+                <span class="fa-li">
+                  <i class="fa fa-map-marker"></i>
+                </span>
+                125, Central Square,New York
+              </li>
+              <li class="padding-bottom-20 padding-left-5">
+                <span class="fa-li">
+                  <i class="fas fa-phone"></i>
+                </span>
+                91 123-456-7890/91
+              </li>
+              <li class="padding-bottom-20 padding-left-5">
+                <span class="fa-li">
+                  <i class="fa fa-mobile"></i>
+                </span>
+                (002) 123-4567
+              </li>
+              <li class="padding-bottom-20 padding-left-5">
+                <span class="fa-li">
+                  <i class="fa fa-envelope"></i>
+                </span>
+                Info@Example.Com
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-4">
+            <h3 class="padding-bottom-40 text-center">Important links</h3>
+            <ul class="fa-ul margin-left-25">
+              <li class="padding-bottom-20 padding-left-5">
+                <a href class="color-principal">
+                  <span class="fa-li">
+                    <i class="fa fa-link"></i>
+                  </span>
+                  About us
+                </a>
+              </li>
+              <li class="padding-bottom-20 padding-left-5">
+                <a href class="color-principal">
+                  <span class="fa-li">
+                    <i class="fa fa-link"></i>
+                  </span>
+                  Go to the contact page
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="text-center padding-top-30 padding-bottom-30">Copyright © 2019 Se no Kanpeki-Sa</div>
       </div>
+    </div>
   </footer>
 </template>
 
@@ -13,17 +76,3 @@ export default {
   name: "AppFooter"
 };
 </script>
-
-<style scoped>
-.footer {
-   position: fixed;
-   left: 0;
-   bottom: 0;
-   width: 100%;
-   height: 4em;
-   background-color: #343a40;
-   color: rgba(255, 255, 255, 0.75);
-   text-align: center;
-   padding: 0.5rem 1rem;
-}
-</style>
