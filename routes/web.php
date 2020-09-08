@@ -29,10 +29,11 @@ Route::middleware('auth')->group(function() {
     Route::post('/authors/new', 'MainController@storeAuthor');
     Route::view('/store/newItem', 'newItem')->name('new_item');
     Route::post('/authors/newItem', 'MainController@storeItem');
-    Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
-    Route::post('login', 'Auth\LoginController@login');
     Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 });
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
+
 
 //Route::get('/login', function () {
 //    return view('login');
