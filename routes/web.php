@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+//Auth::routes();
 
 Route::view('/', 'home')->name('home');
 
@@ -22,27 +22,23 @@ Route::get('/authors', 'MainController@returnAuthors')->name('authors');
 
 Route::get('/store', 'MainController@showStore')->name('store');
 
-Route::view('/events/new', 'newEvent')
-    ->middleware('auth')->name('new_event');
+Route::middleware('auth')->group(function() {
+    Route::view('/events/new', 'newEvent')->name('new_event');
+    Route::post('/events/new', 'MainController@storeEvent');
+    Route::view('/authors/new', 'newAuthor')->name('new_author');
+    Route::post('/authors/new', 'MainController@storeAuthor');
+    Route::view('/store/newItem', 'newItem')->name('new_item');
+    Route::post('/authors/newItem', 'MainController@storeItem');
+    $this->get('login', 'Auth\LoginController@showLoginForm')->name('login');
+    $this->post('login', 'Auth\LoginController@login');
+    $this->post('logout', 'Auth\LoginController@logout')->name('logout');
+});
 
-Route::post('/events/new', 'MainController@storeEvent')
-    ->middleware('auth');
-
-Route::view('/authors/new', 'newAuthor')
-    ->middleware('auth')->name('new_author');
-
-Route::post('/authors/new', 'MainController@storeAuthor')
-    ->middleware('auth');
-
-Route::view('/store/newItem', 'newItem')
-    ->middleware('auth')->name('new_item');
-
-Route::post('/authors/newItem', 'MainController@storeItem')
-    ->middleware('auth');
 //Route::get('/login', function () {
 //    return view('login');
 //});
 
-Auth::routes();
+
+
 
 
