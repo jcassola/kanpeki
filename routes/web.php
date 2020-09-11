@@ -28,7 +28,7 @@ Route::middleware('auth')->group(function() {
     Route::view('/authors/new', 'newAuthor')->name('new_author');
     Route::post('/authors/new', 'MainController@storeAuthor');
     Route::view('/store/newItem', 'newItem')->name('new_item');
-    Route::post('/authors/newItem', 'MainController@storeItem');
+    Route::post('/store/newItem', 'MainController@storeItem');
     Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 });
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

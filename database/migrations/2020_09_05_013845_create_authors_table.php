@@ -15,10 +15,10 @@ class CreateAuthorsTable extends Migration
     {
         Schema::create('authors', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('name');
+            $table->string('name')->nullable();
             $table->string('nick')->unique();
-            $table->string('picture', 50);
-            $table->mediumText('description');
+            $table->string('picture', 100)->default('public/defaultAuthor.jpg');
+            $table->mediumText('description')->nullable();
             $table->set('category', ['dibujo', 'musica', 'videos']);
         });
     }
