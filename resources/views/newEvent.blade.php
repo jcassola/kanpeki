@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container" xmlns="http://www.w3.org/1999/html">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
@@ -9,7 +9,7 @@
                     <div class="card-body">
 
                         <form enctype="multipart/form-data" method="POST" action="{{ url('/events/new') }}">
-                            {{ csrf_field() }}
+                            @csrf
                             <div class="form-group">
                                 <label>Título:</label>
                                 <input type="text" name="title" class="form-control">

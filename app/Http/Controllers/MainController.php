@@ -27,7 +27,7 @@ class MainController extends Controller
         $request->validate([
             'nick' => 'required|unique:authors',
         ], [
-            'nick.unique' => 'Ya existe un autor con ese nick.',
+            'nick.unique' => 'Ya existe un artista con ese nick',
         ]);
 
         $author = new Author();
@@ -62,7 +62,7 @@ class MainController extends Controller
     }
     public function storeItem(Request $request){
         $request->validate([
-            'title' => 'required',
+            'name' => 'required',
             'description' => 'required|max:300',
             'price' => 'required'
         ], [
@@ -70,7 +70,7 @@ class MainController extends Controller
         ]);
 
         $item = new Item();
-        $item->title = $request->input('title');
+        $item->name = $request->input('name');
         $item->description = $request->input('description');
         $item->price = $request->input('price');
         if($request->hasFile('picture')){
