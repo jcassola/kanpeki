@@ -1981,6 +1981,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppFooter"
 });
@@ -37658,8 +37659,9 @@ var staticRenderFns = [
               _c("div", { staticClass: "col-12 col-md-4 text-center" }, [
                 _c("img", {
                   staticClass: "site-logo text-center",
+                  staticStyle: { width: "80px" },
                   attrs: {
-                    src: "/images/logo.jpg",
+                    src: "images/logo.png",
                     alt: "Logo de ZaruArquitectura"
                   }
                 }),
