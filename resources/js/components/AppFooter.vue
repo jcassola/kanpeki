@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-12 col-md-4 text-center">
             <img
-              src="/images/logo.jpg"
+              src="/images/logo.png"
               alt="Logo de ZaruArquitectura"
               class="site-logo text-center"
             />
