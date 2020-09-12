@@ -10,39 +10,36 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Auth::routes();
+//Auth::routes();
 
-Route::view('/', 'home');
+Route::view('/', 'home')->name('home');
 
-Route::view('/about', 'about');
+Route::view('/about', 'about')->name('about');
 
-Route::get('/events', 'MainController@returnEvents');
+Route::get('/events', 'MainController@returnEvents')->name('events');
 
-Route::get('/authors', 'MainController@returnAuthors');
+Route::get('/authors', 'MainController@returnAuthors')->name('authors');
 
-Route::get('/store', 'MainController@showStore');
+Route::get('/store', 'MainController@showStore')->name('store');
 
-Route::view('/events/new', 'newEvent')
-    ->middleware('auth');
+Route::middleware('auth')->group(function() {
+    Route::view('/events/new', 'newEvent')->name('new_event');
+    Route::post('/events/new', 'MainController@storeEvent');
+    Route::view('/authors/new', 'newAuthor')->name('new_author');
+    Route::post('/authors/new', 'MainController@storeAuthor');
+    Route::view('/store/newItem', 'newItem')->name('new_item');
+    Route::post('/store/newItem', 'MainController@storeItem');
+    Route::post('logout', 'Auth\LoginController@logout')->name('logout');
+});
+Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
+Route::post('login', 'Auth\LoginController@login');
 
-Route::post('/events/new', 'MainController@storeEvent')
-    ->middleware('auth');
 
-Route::view('/authors/new', 'newAuthor')
-    ->middleware('auth');
-
-Route::post('/authors/new', 'MainController@storeAuthor')
-    ->middleware('auth');
-
-Route::view('/store/newItem', 'newItem')
-    ->middleware('auth');
-
-Route::post('/authors/newItem', 'MainController@storeItem')
-    ->middleware('auth');
 //Route::get('/login', function () {
 //    return view('login');
 //});
 
-Auth::routes();
+
+
 
 

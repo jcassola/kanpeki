@@ -8,6 +8,7 @@
               src="/images/logo.png"
               alt="Logo de ZaruArquitectura"
               class="site-logo text-center"
+              style="width:80px;"
             />
             <p>
               Natus eget occaecati, lobortis, vestibulum nam eros, risus lacinia

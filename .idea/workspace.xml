@@ -3,9 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="d511fe7f-2643-4bc6-a057-4eb6160e9bbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/cache.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/cache.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/session.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/session.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_01_023034_create_events_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_01_023034_create_events_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_013845_create_authors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_013845_create_authors_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_020514_create_store_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_020514_create_store_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -117,7 +117,13 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -151,7 +157,20 @@
       <workItem from="1598973239235" duration="946000" />
       <workItem from="1598974491213" duration="45000" />
       <workItem from="1599092946254" duration="3475000" />
-      <workItem from="1599267031529" duration="5166000" />
+      <workItem from="1599267031529" duration="5490000" />
+      <workItem from="1599340711099" duration="1866000" />
+      <workItem from="1599429972842" duration="159000" />
+      <workItem from="1599431250253" duration="428000" />
+      <workItem from="1599443788254" duration="567000" />
+      <workItem from="1599501415474" duration="1209000" />
+      <workItem from="1599528427067" duration="3704000" />
+      <workItem from="1599579429216" duration="591000" />
+      <workItem from="1599596543073" duration="3137000" />
+      <workItem from="1599768173456" duration="1067000" />
+      <workItem from="1599790193312" duration="833000" />
+      <workItem from="1599847615242" duration="371000" />
+      <workItem from="1599849785868" duration="572000" />
+      <workItem from="1599850672093" duration="6335000" />
     </task>
     <servers />
   </component>
