@@ -84,6 +84,7 @@
                             </li>
                         @endguest
                     </ul>
+                    <social-links></social-links>
                 </div>
             </div>
         </nav>
