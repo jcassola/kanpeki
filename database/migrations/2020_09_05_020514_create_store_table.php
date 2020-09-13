@@ -16,7 +16,7 @@ class CreateStoreTable extends Migration
         Schema::create('store', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('name');
-            $table->string('picture', 100)->default('public/defaultItem.jpg');
+            $table->string('picture', 100)->default('defaultItem.jpeg');
             $table->mediumText('description');
             $table->double('price', 6, 2);
 

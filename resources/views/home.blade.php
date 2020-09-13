@@ -115,5 +115,4 @@
             </div>
         </vue-section>
     </section>
-
 @endsection

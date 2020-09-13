@@ -33,7 +33,7 @@
                                 <label>Categoría:</label>
                             <select name="category">
                                 <option value="dibujo" selected>Dibujo</option>
-                                <option value="musica">Musica</option>
+                                <option value="musica">Música</option>
                                 <option value="videos">Videos</option>
                             </select>
                             </div>

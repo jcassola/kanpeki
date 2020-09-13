@@ -9,8 +9,8 @@ class Event extends Model
     public $timestamps = false;
 
     public function getUrlPicture(){
-        return url($this->picture);
+        return url('storage/'.$this->picture);
         //Para cargar la foto en la vista seria asi:
-        //<img src="{{ $event->getUrlPicture }}" alt="">
+        //<img src="{{ $event->getUrlPicture() }}" alt="">
     }
 }

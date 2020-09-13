@@ -13,15 +13,15 @@ class MainController extends Controller
     public function returnEvents(){
         $events = Event::orderBy('created_at', 'desc')
             ->paginate(10);
-        return view('events', $events);
+        return view('events')->with('events', $events);
     }
     public function returnAuthors(){
         $authors = Author::paginate(10);
-        return view('authors', $authors);
+        return view('authors')->with('authors', $authors);
     }
     public function showStore(){
         $items = Item::paginate(10);
-        return view('store', $items);
+        return view('store')->with('items', $items);
     }
     public function storeAuthor(Request $request){
         $request->validate([
@@ -36,7 +36,9 @@ class MainController extends Controller
         $author->description = $request->input('description');
         $author->category = $request->input('category');
         if($request->hasFile('picture')){
-            $author->picture = $request->picture->store('public');
+            $imageURL = request()->picture->store('public');
+            $onlyName = explode('/', $imageURL);
+            $author->picture = $onlyName[1];
         }
         $author->save();
         return redirect('/authors');
@@ -55,7 +57,9 @@ class MainController extends Controller
         $event->title = $request->input('title');
         $event->description = $request->input('description');
         if($request->hasFile('picture')){
-            $event->picture = $request->picture->store('public');
+            $imageURL = request()->picture->store('public');
+            $onlyName = explode('/', $imageURL);
+            $event->picture = $onlyName[1];
         }
         $event->save();
         return redirect('/events');
@@ -74,7 +78,9 @@ class MainController extends Controller
         $item->description = $request->input('description');
         $item->price = $request->input('price');
         if($request->hasFile('picture')){
-            $item->picture = $request->picture->store('public');
+            $imageURL = request()->picture->store('public');
+            $onlyName = explode('/', $imageURL);
+            $item->picture = $onlyName[1];
         }
         $item->save();
         return redirect('/store');

@@ -17,7 +17,7 @@ class CreateEventsTable extends Migration
             $table->bigIncrements('id');
             $table->longText('title');
             $table->longText('description');
-            $table->string('picture', 100)->default('public/defaultEvent.jpg');
+            $table->string('picture', 100)->default('defaultEvent.jpeg');
             $table->dateTime('created_at')->useCurrent();
         });
     }
