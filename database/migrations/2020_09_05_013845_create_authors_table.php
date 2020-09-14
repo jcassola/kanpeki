@@ -17,7 +17,7 @@ class CreateAuthorsTable extends Migration
             $table->bigIncrements('id');
             $table->string('name')->nullable();
             $table->string('nick')->unique();
-            $table->string('picture', 100)->default('public/defaultAuthor.jpg');
+            $table->string('picture', 100)->default('defaultAuthor.jpeg');
             $table->mediumText('description')->nullable();
             $table->set('category', ['dibujo', 'musica', 'videos']);
         });

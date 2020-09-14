@@ -10,6 +10,6 @@ class Item extends Model
     public $timestamps = false;
 
     public function getUrlPicture(){
-        return url($this->picture);
+        return url('storage/'.$this->picture);
     }
 }

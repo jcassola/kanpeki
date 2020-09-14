@@ -1,15 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="container" xmlns="http://www.w3.org/1999/html">
+    <div class="container">
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Nuevo Autor') }}</div>
+                    <div class="card-header">{{ __('Nuevo Artista') }}</div>
                     <div class="card-body">
 
                         <form enctype="multipart/form-data" method="POST" action="{{ url('/authors/new') }}">
-                            {{ csrf_field() }}
+                            @csrf
                             <div class="form-group">
                                 <label>Nombre:</label>
                                 <input type="text" name="name" class="form-control">
@@ -33,7 +33,7 @@
                                 <label>Categoría:</label>
                             <select name="category">
                                 <option value="dibujo" selected>Dibujo</option>
-                                <option value="musica">Musica</option>
+                                <option value="musica">Música</option>
                                 <option value="videos">Videos</option>
                             </select>
                             </div>

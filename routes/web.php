@@ -27,8 +27,8 @@ Route::middleware('auth')->group(function() {
     Route::post('/events/new', 'MainController@storeEvent');
     Route::view('/authors/new', 'newAuthor')->name('new_author');
     Route::post('/authors/new', 'MainController@storeAuthor');
-    Route::view('/store/newItem', 'newItem')->name('new_item');
-    Route::post('/store/newItem', 'MainController@storeItem');
+    Route::view('/store/new', 'newItem')->name('new_item');
+    Route::post('/store/new', 'MainController@storeItem');
     Route::post('logout', 'Auth\LoginController@logout')->name('logout');
 });
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');

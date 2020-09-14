@@ -10,6 +10,6 @@ class Author extends Model
 
     public function getUrlPicture()
     {
-        return url($this->picture);
+        return url('storage/'.$this->picture);
     }
 }
