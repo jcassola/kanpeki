@@ -26,8 +26,10 @@ class MainController extends Controller
     public function storeAuthor(Request $request){
         $request->validate([
             'nick' => 'required|unique:authors',
+            'picture' => 'mimes:jpeg,png,bmp,tiff',
         ], [
             'nick.unique' => 'Ya existe un artista con ese nick',
+            'picture.mimes' => 'Solo imágenes son permitidas'
         ]);
 
         $author = new Author();
@@ -48,9 +50,11 @@ class MainController extends Controller
         $request->validate([
             'title' => 'required|unique:events|max:100',
             'description' => 'required',
+            'picture' => 'mimes:jpeg,png,bmp,tiff',
         ], [
             'title.unique' => 'Ya existe un evento con ese título',
-            'title.max' => 'El título del evento es demasiado largo'
+            'title.max' => 'El título del evento es demasiado largo',
+            'picture.mimes' => 'Solo imágenes son permitidas'
         ]);
 
         $event = new Event();
@@ -68,9 +72,12 @@ class MainController extends Controller
         $request->validate([
             'name' => 'required',
             'description' => 'required|max:300',
-            'price' => 'required'
+            'price' => 'required',
+            'picture' => 'mimes:jpeg,png,bmp,tiff',
+
         ], [
-            'description.max' => 'La descripción del artículo es demasiado larga'
+            'description.max' => 'La descripción del artículo es demasiado larga',
+            'picture.mimes' => 'Solo imágenes son permitidas'
         ]);
 
         $item = new Item();
