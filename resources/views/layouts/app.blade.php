@@ -37,7 +37,7 @@
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('home') }}">{{ __('Hogar') }} </a>
+                            <a class="nav-link" href="{{ route('home') }}">{{ __('Inicio') }} </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link">{{ __('Noticias') }}</a>

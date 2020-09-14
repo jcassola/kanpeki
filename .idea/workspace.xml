@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="d511fe7f-2643-4bc6-a057-4eb6160e9bbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -176,7 +177,8 @@
       <workItem from="1600026277714" duration="2072000" />
       <workItem from="1600028973891" duration="2142000" />
       <workItem from="1600032346722" duration="2214000" />
-      <workItem from="1600041733907" duration="347000" />
+      <workItem from="1600041733907" duration="648000" />
+      <workItem from="1600103447192" duration="2737000" />
     </task>
     <servers />
   </component>
