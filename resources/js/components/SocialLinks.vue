@@ -21,6 +21,6 @@ export default {
 
 <style lang="scss" scoped>
 .social-icons {
-  font-size: 2em;
+  font-size: 3em;
 }
 </style>

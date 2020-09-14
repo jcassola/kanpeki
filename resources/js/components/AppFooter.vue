@@ -64,7 +64,6 @@
                 </a>
               </li>
             </ul>
-            <social-links></social-links>
           </div>
         </div>
         <div class="text-center padding-top-30 padding-bottom-30">Copyright © 2019 Se no Kanpeki-Sa</div>

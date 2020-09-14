@@ -6521,7 +6521,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".social-icons[data-v-2d2ed931] {\n  font-size: 2em;\n}", ""]);
+exports.push([module.i, ".social-icons[data-v-2d2ed931] {\n  font-size: 3em;\n}", ""]);
 
 // exports
 
