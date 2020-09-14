@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div id="social">
     <a href="#">
       <span class="mdi mdi-facebook social-icons"></span>
     </a>
@@ -21,6 +21,7 @@ export default {
 
 <style lang="scss" scoped>
 .social-icons {
-  font-size: 2em;
+  font-size: 4em;
+    color: #f70027;
 }
 </style>

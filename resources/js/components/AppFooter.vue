@@ -5,7 +5,7 @@
         <div class="row">
           <div class="col-12 col-md-4 text-center">
             <img
-              src="images/logo1.png"
+              src="images/kampeki-kun-name.png"
               alt="Logo de ZaruArquitectura"
               class="site-logo text-center"
               style="width:80px;"
@@ -48,7 +48,7 @@
             <h3 class="padding-bottom-40 text-center">Important links</h3>
             <ul class="fa-ul margin-left-25">
               <li class="padding-bottom-20 padding-left-5">
-                <a href class="color-principal">
+                <a href = "/about" class="color-principal">
                   <span class="fa-li">
                     <i class="fa fa-link"></i>
                   </span>
@@ -57,6 +57,7 @@
               </li>
               <li class="padding-bottom-20 padding-left-5">
                 <a href class="color-principal">
+
                   <span class="fa-li">
                     <i class="fa fa-link"></i>
                   </span>
@@ -64,10 +65,9 @@
                 </a>
               </li>
             </ul>
-            <social-links></social-links>
           </div>
         </div>
-        <div class="text-center padding-top-30 padding-bottom-30">Copyright © 2019 Se no Kanpeki-Sa</div>
+        <div class="text-center padding-top-30 padding-bottom-30">Copyright © 2020 Se no Kanpeki-Sa</div>
       </div>
     </div>
   </footer>

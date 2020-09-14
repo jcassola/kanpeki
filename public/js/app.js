@@ -1982,6 +1982,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "AppFooter"
 });
@@ -6521,7 +6522,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, ".social-icons[data-v-2d2ed931] {\n  font-size: 2em;\n}", ""]);
+exports.push([module.i, ".social-icons[data-v-2d2ed931] {\n  font-size: 4em;\n  color: #f70027;\n}", ""]);
 
 // exports
 
@@ -38335,7 +38336,7 @@ var staticRenderFns = [
                   staticClass: "site-logo text-center",
                   staticStyle: { width: "80px" },
                   attrs: {
-                    src: "images/logo1.png",
+                    src: "images/kampeki-kun-name.png",
                     alt: "Logo de ZaruArquitectura"
                   }
                 }),
@@ -38413,7 +38414,10 @@ var staticRenderFns = [
                     [
                       _c(
                         "a",
-                        { staticClass: "color-principal", attrs: { href: "" } },
+                        {
+                          staticClass: "color-principal",
+                          attrs: { href: "/about" }
+                        },
                         [
                           _c("span", { staticClass: "fa-li" }, [
                             _c("i", { staticClass: "fa fa-link" })
@@ -38449,7 +38453,7 @@ var staticRenderFns = [
             _c(
               "div",
               { staticClass: "text-center padding-top-30 padding-bottom-30" },
-              [_vm._v("Copyright © 2019 Se no Kanpeki-Sa")]
+              [_vm._v("Copyright © 2020 Se no Kanpeki-Sa")]
             )
           ])
         ]
@@ -38591,7 +38595,7 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", [
+    return _c("div", { attrs: { id: "social" } }, [
       _c("a", { attrs: { href: "#" } }, [
         _c("span", { staticClass: "mdi mdi-facebook social-icons" })
       ]),

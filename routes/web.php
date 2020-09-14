@@ -17,6 +17,7 @@ Route::view('/', 'home')->name('home');
 Route::view('/about', 'about')->name('about');
 
 Route::get('/events', 'MainController@returnEvents')->name('events');
+Route::get('/news', 'MainController@returnNews')->name('news');
 
 Route::get('/authors', 'MainController@returnAuthors')->name('authors');
 
