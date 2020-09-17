@@ -1,5 +1,37 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
+.app-text-color {
+  color: #343a40;
+}
+
+.app-background-color {
+  background-color: #343a40;
+}
+
+.app-text-color {
+  color: #e9ecef;
+}
+
+.app-background-color {
+  background-color: #e9ecef;
+}
+
+.app-text-color {
+  color: #f70027;
+}
+
+.app-background-color {
+  background-color: #f70027;
+}
+
+.app-text-color {
+  color: #306b41;
+}
+
+.app-background-color {
+  background-color: #306b41;
+}
+
 /*!
  * Bootstrap v4.5.2 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
