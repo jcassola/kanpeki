@@ -6,8 +6,9 @@
 
     <!-- CSRF Token -->
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <title>Se no Kanpeki-Sa</title>
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    @include('metadata')
 
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}" defer></script>
@@ -91,7 +92,6 @@
         <main>
             @yield('content')
         </main>
-
         <app-footer></app-footer>
     </div>
 </body>

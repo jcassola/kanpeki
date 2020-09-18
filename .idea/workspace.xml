@@ -3,11 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="d511fe7f-2643-4bc6-a057-4eb6160e9bbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/css/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/app.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/AppFooter.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/AppFooter.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/SocialLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/SocialLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/about.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/about.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/authors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/authors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -118,11 +121,15 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\kanpeki\resources\views\layouts" />
       <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
     </key>
   </component>
@@ -184,6 +191,12 @@
       <workItem from="1600103447192" duration="2737000" />
       <workItem from="1600109783659" duration="561000" />
       <workItem from="1600110717584" duration="1316000" />
+      <workItem from="1600138957460" duration="3335000" />
+      <workItem from="1600182730752" duration="804000" />
+      <workItem from="1600224663886" duration="51000" />
+      <workItem from="1600225184794" duration="1868000" />
+      <workItem from="1600308693785" duration="5176000" />
+      <workItem from="1600314613458" duration="1786000" />
     </task>
     <servers />
   </component>
