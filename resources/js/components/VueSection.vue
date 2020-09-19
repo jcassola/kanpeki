@@ -1,7 +1,7 @@
 <template>
   <div class="jumbotron jumbotron-fluid mb-0" :class="{ 'no-padding': !hasPadding }">
     <div class="container"  >
-      <h1>{{ title }}</h1>
+      <h1 v-if="title !== ''">{{ title }}</h1>
       <slot></slot>
     </div>
   </div>
@@ -26,6 +26,6 @@ export default {
 <style scoped>
 .no-padding {
     padding-bottom: 0px;
-    padding-top: 10px;
+    padding-top: 0px;
 }
 </style>
