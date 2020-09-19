@@ -10,6 +10,12 @@
 <meta property="og:locale" content="es_ES" />
 <meta property="og:copyright" content="Se no Kanpeki-Sa Copyright" />
 
+{{-- HTML5 default meta fields --}}
+<meta name="description" content="Un lugar de juegos, animes, doramas, dibujo y todo lo que se le ocurra a los integrantes">
+<meta name="keywords" content="kanpeki, otaku, dibujo, cultura">
+<meta name="author" content="Se no Kanpeki-Sa">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <!--Search Engine Optimization Meta Tags-->
 <meta name="robots" content="index,follow" />
 <meta name="revisit-after" content="7 days">
