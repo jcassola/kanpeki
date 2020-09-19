@@ -31,10 +31,10 @@
     <div class="row justify-content-center">
         @foreach ($items as $item)
             <bootstrap-product-card
-                    productPictureUrl="@json($item->picture)"
-                    productName="@json($item->name)"
-                    productDescription="@json($item->description)"
-                    productPrice="@json($item->price)" >
+                    product-picture-url="{{ $item->picture }}"
+                    product-name="{{ $item->name }}"
+                    product-description="{{ $item->description }}"
+                    product-price="{{ $item->price }}" >
             </bootstrap-product-card>
         @endforeach
     </div>
