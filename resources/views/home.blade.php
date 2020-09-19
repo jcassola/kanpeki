@@ -116,7 +116,7 @@
         </vue-section>
     </section>
     <section>
-        <vue-section :has-padding="false" title="">
+        <vue-section :has-padding="false">
             <social-links></social-links>
         </vue-section>
     </section>
