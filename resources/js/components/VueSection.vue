@@ -1,6 +1,6 @@
 <template>
-  <div class="jumbotron jumbotron-fluid mb-0" :class="{ 'no-margin': !hasMargin }">
-    <div class="container">
+  <div class="jumbotron jumbotron-fluid mb-0" :class="{ 'no-padding': !hasPadding }">
+    <div class="container"  >
       <h1>{{ title }}</h1>
       <slot></slot>
     </div>
@@ -14,7 +14,7 @@ export default {
       type: String,
       default: ""
     },
-    hasMargin: {
+    hasPadding: {
       type: Boolean,
       default: true
     }
@@ -24,8 +24,8 @@ export default {
 </script>
 
 <style scoped>
-.no-margin {
-    margin-bottom: 0px;
-    margin-top: 0px;
+.no-padding {
+    padding-bottom: 0px;
+    padding-top: 10px;
 }
 </style>
