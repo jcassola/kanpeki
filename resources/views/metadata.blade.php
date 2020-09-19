@@ -1,5 +1,4 @@
 <!--Web Information Meta Tags-->
-<meta property="fb:app_id" content="ХХХХХХХХХХХХХХХ" />
 <meta property="og:title" content="Se no Kanpeki-Sa" />
 <meta property="og:site_name" content="Se no Kanpeki-Sa"/>
 <meta property="og:description" content="Un lugar de juegos, animes, doramas, dibujo y todo lo que se le ocurra a los integrantes"/>
