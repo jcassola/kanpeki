@@ -1,12 +1,13 @@
 <!--Web Information Meta Tags-->
 <meta property="og:title" content="Se no Kanpeki-Sa" />
+<meta property="og:site_name" content="Se no Kanpeki-Sa"/>
 <meta property="og:description" content="Un lugar de juegos, animes, doramas, dibujo y todo lo que se le ocurra a los integrantes"/>
 <meta property="og:keywords" content="kanpeki, otaku, dibujo, cultura"/>
 <meta property="og:author" content="Se no Kanpeki-Sa"/>
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://kanpeki-sa.herokuapp.com/"/>
-<meta property="og:image" content="{{ asset('images/kampeki-kun.jpg') }}"/>
-<meta property="og:image:size" content="300" />
+{{-- <meta property="og:image" content="{{ asset('images/kampeki-kun.jpg') }}"/> --}}
+{{-- <meta property="og:image:size" content="300" /> --}}
 <meta property="og:locale" content="es_ES" />
 <meta property="og:copyright" content="Se no Kanpeki-Sa Copyright" />
 
