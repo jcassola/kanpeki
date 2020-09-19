@@ -10,7 +10,7 @@ $factory->define(News::class, function (Faker $faker) {
     return [
         'title' => $faker->title,
         'text' => $faker->text,
-        'picture' => $faker->text(100),
+        'picture' => $faker->md5().".jpg",
         'created_at' => now(),
     ];
 });

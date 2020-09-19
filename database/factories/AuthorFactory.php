@@ -8,9 +8,9 @@ use Faker\Generator as Faker;
 $factory->define(Author::class, function (Faker $faker) {
     return [
         'name' => $faker->name,
-        'nick' => $faker->unique()->nick,
-        'picture' => $faker->text(100),
+        'nick' => $faker->unique()->name,
+        'picture' => $faker->md5().".jpg",
         'description' => $faker->text,
-        'category' => $faker->text,
+        'category' => $faker->randomElement(array('musica', 'dibujo', 'videos')),
     ];
 });

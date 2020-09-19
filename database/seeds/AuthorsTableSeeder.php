@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Database\Seeder;
+use App\Author;
 
 class AuthorsTableSeeder extends Seeder
 {
@@ -11,6 +12,6 @@ class AuthorsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Author::class, 10)->create();
     }
 }
