@@ -29,10 +29,14 @@
     </nav>
     <h3>Productos</h3>
     <div class="row justify-content-center">
-        <bootstrap-product-card productName="" productDescription="" ></bootstrap-product-card>
-        <bootstrap-product-card productName="" productDescription="" ></bootstrap-product-card>
-        <bootstrap-product-card productName="" productDescription="" ></bootstrap-product-card>
-        <bootstrap-product-card productName="" productDescription="" ></bootstrap-product-card>
+        @foreach ($items as $item)
+            <bootstrap-product-card
+                    productPictureUrl="@json($item->picture)"
+                    productName="@json($item->name)"
+                    productDescription="@json($item->description)"
+                    productPrice="@json($item->price)" >
+            </bootstrap-product-card>
+        @endforeach
     </div>
 </div>
 @endsection

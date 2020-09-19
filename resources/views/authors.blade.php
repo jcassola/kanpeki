@@ -29,36 +29,19 @@
     </nav>
     <h3>Autores</h3>
     <div class="row">
-        <div class="col-md-12">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Un producto">
-                <div class="card-body">
-                    <h5 class="card-title">Nombre del producto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Detalles del autor</a>
+        @foreach ($authors as $author)
+            <div class="col-md-12">
+                <div class="card">
+                    <img class="card-img-top" src="{{ $author->picture }}" alt="Un producto">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ $author->name }}</h5>
+                        <h5 class="card-title">{{ $author->nick }}</h5>
+                        <p class="card-text">{{ $author->category }}</p>
+                        <p class="card-text">{{ $author->description }}</p>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-12">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Un producto">
-                <div class="card-body">
-                    <h5 class="card-title">Nombre del producto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Detalles del autor</a>
-                </div>
-            </div>
-        </div>
-        <div class="col-md-12">
-            <div class="card">
-                <img class="card-img-top" src="..." alt="Un producto">
-                <div class="card-body">
-                    <h5 class="card-title">Nombre del producto</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                    <a href="#" class="btn btn-primary">Detalles del autor</a>
-                </div>
-            </div>
-        </div>
+        @endforeach
     </div>
 </div>
 @endsection
