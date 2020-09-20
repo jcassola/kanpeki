@@ -22,3 +22,10 @@ export default {
   name: "BootstrapProductCard"
 };
 </script>
+
+<style scoped>
+.card {
+  height: 400px;
+  margin-bottom: 24px;
+}
+</style>
