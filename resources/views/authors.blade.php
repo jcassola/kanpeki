@@ -24,7 +24,6 @@
             </form>
         </div>
     </nav>
-    <h3>Autores</h3>
     <div class="row">
         @foreach ($authors as $author)
         <div class="col-md-12">
