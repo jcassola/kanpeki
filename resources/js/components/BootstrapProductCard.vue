@@ -7,6 +7,11 @@
         <p class="card-text text-secondary">{{ productDescription }}</p>
         <p class="card-text">{{ productPrice }}</p>
       </div>
+      <div class="card-body">
+        <button href="#" class="btn btn-outline-success">
+            <span class="mdi mdi-eye"></span>
+        </button>
+      </div>
     </div>
   </div>
 </template>
