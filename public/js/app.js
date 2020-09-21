@@ -2118,7 +2118,7 @@ __webpack_require__.r(__webpack_exports__);
       type: String,
       "default": ""
     },
-    hasMargin: {
+    hasPadding: {
       type: Boolean,
       "default": true
     }
@@ -6579,7 +6579,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.no-margin[data-v-3881ffaa] {\r\n    margin-bottom: 0px;\r\n    margin-top: 0px;\n}\r\n", ""]);
+exports.push([module.i, "\n.no-padding[data-v-3881ffaa] {\r\n    padding-bottom: 0px;\r\n    padding-top: 0px;\n}\r\n", ""]);
 
 // exports
 
@@ -38767,13 +38767,17 @@ var render = function() {
     "div",
     {
       staticClass: "jumbotron jumbotron-fluid mb-0",
-      class: { "no-margin": !_vm.hasMargin }
+      class: { "no-padding": !_vm.hasPadding }
     },
     [
       _c(
         "div",
         { staticClass: "container" },
-        [_c("h1", [_vm._v(_vm._s(_vm.title))]), _vm._v(" "), _vm._t("default")],
+        [
+          _vm.title !== "" ? _c("h1", [_vm._v(_vm._s(_vm.title))]) : _vm._e(),
+          _vm._v(" "),
+          _vm._t("default")
+        ],
         2
       )
     ]
