@@ -24,6 +24,7 @@
             </form>
         </div>
     </nav>
+    <vue-spacer space="20"></vue-spacer>
     <h3>Productos</h3>
     <div class="row justify-content-center">
         @foreach ($items as $item)
