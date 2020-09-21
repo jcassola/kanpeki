@@ -6,6 +6,7 @@ namespace App\Http\Controllers;
 use App\Author;
 use App\Event;
 use App\Item;
+use App\News;
 use Illuminate\Http\Request;
 
 class MainController extends Controller
@@ -14,6 +15,11 @@ class MainController extends Controller
         $events = Event::orderBy('created_at', 'desc')
             ->paginate(10);
         return view('events')->with('events', $events);
+    }
+    public function returnNews(){
+        $news = News::orderBy('created_at', 'desc')
+            ->paginate(10);
+        return view('news')->with('news', $news);
     }
     public function returnAuthors(){
         $authors = Author::paginate(10);

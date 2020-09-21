@@ -41,7 +41,8 @@
                             <a class="nav-link" href="{{ route('home') }}">{{ __('Inicio') }} </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link">{{ __('Noticias') }}</a>
+                            <a class="nav-link" href="{{ route('news') }}">{{ __('Noticias') }}</a>
+
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('events') }}">{{ __('Eventos') }}</a>
