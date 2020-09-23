@@ -13,7 +13,8 @@
 //Auth::routes();
 
 //Main routes
-Route::view('/', 'home')->name('home');
+Route::view('/home', 'home')->name('home');
+Route::redirect('/', 'home');
 Route::view('/about', 'about')->name('about');
 Route::get('/events', 'EventsController@returnEvents')->name('events');
 Route::get('/news', 'NewsController@returnNews')->name('news');
@@ -42,6 +43,8 @@ Route::get('news/{id}', 'NewsController@showNews')->name('news.show');
 //Login routes
 Route::get('login', 'Auth\LoginController@showLoginForm')->name('login');
 Route::post('login', 'Auth\LoginController@login');
+
+
 
 
 
