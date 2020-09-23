@@ -1,22 +1,7 @@
 <template>
   <ul class="navbar-nav ml-auto">
-    <li class="nav-item">
-      <a class="nav-link active" href="/">Inicio</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="news">Noticias</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="events">Eventos</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="store">Tienda</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="authors">Artistas</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="about">Contactos</a>
+    <li class="nav-item" v-for="route in routes" :key="route.name">
+      <a class="nav-link" :class="{ 'active': route.route === currentRoute }" :href="route.route">{{ route.name }}</a>
     </li>
     <!-- Authentication Links -->
     <slot></slot>
@@ -25,7 +10,38 @@
 
 <script>
 export default {
-  props: ["userName"],
-  name: "BootstrapNavbarLinks"
+  props: ["userName", "currentRoute"],
+  name: "BootstrapNavbarLinks",
+  data() {
+    return {
+      routes: [
+        {
+          route: "/",
+          name: "Inicio"
+        },
+        {
+          route: "news",
+          name: "Noticias"
+        },
+        {
+          route: "events",
+          name: "Eventos"
+        },
+        {
+          route: "store",
+          name: "Tienda"
+        },
+        {
+          route: "authors",
+          name: "Autores"
+        },
+        {
+          route: "about",
+          name: "Nosotros"
+        },
+
+      ]
+    };
+  }
 };
 </script>
