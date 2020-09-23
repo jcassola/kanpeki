@@ -18,7 +18,7 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Right Side Of Navbar -->
-        <bootstrap-navbar-links :user-name="userName">
+        <bootstrap-navbar-links :user-name="userName" :current-route="currentRoute">
           <!-- Authentication Links -->
           <slot></slot>
         </bootstrap-navbar-links>
@@ -29,7 +29,7 @@
 
 <script>
 export default {
-  props: ["userName"],
-  name: "BootstrapNavbar"
+  props: ["userName", "currentRoute"],
+  name: "BootstrapNavbar",
 };
 </script>
