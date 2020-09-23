@@ -26,9 +26,12 @@
             </form>
         </div>
     </nav>
+
+    <vue-spacer space="20"></vue-spacer>
+
     <div class="row">
         @foreach ($authors as $author)
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="card">
                 <img class="card-img-top" src="{{ $author->picture }}" alt="Un producto">
                 <div class="card-body">
@@ -38,6 +41,7 @@
                     <p class="card-text">{{ $author->description }}</p>
                 </div>
             </div>
+            <vue-spacer space="10"></vue-spacer>
         </div>
         @endforeach
     </div>
