@@ -1,7 +1,12 @@
 <template>
   <ul class="navbar-nav ml-auto">
     <li class="nav-item" v-for="route in routes" :key="route.name">
-      <a class="nav-link" :class="{ 'active': route.route === currentRoute }" :href="route.route">{{ route.name }}</a>
+      <a
+        class="nav-link"
+        :class="{ active: route.name === currentRoute }"
+        :href="route.route"
+        >{{ route.public }}</a
+      >
     </li>
     <!-- Authentication Links -->
     <slot></slot>
@@ -17,29 +22,34 @@ export default {
       routes: [
         {
           route: "/",
-          name: "Inicio"
+          name: "home",
+          public: "Inicio"
         },
         {
           route: "news",
-          name: "Noticias"
+          name: "news",
+          public: "Noticias"
         },
         {
           route: "events",
-          name: "Eventos"
+          name: "events",
+          public: "Eventos"
         },
         {
           route: "store",
-          name: "Tienda"
+          name: "store",
+          public: "Tienda"
         },
         {
           route: "authors",
-          name: "Autores"
+          name: "authors",
+          public: "Autores"
         },
         {
           route: "about",
-          name: "Nosotros"
-        },
-
+          name: "about",
+          public: "Nosotros"
+        }
       ]
     };
   }
