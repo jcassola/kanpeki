@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
 <vue-section title="Eventos">
     <div class="row justify-content-center">
