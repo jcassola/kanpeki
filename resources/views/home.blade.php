@@ -117,9 +117,4 @@
             </div>
         </vue-section>
     </section>
-    <section>
-        <vue-section :has-padding="false" class="bg-dark">
-            <social-links></social-links>
-        </vue-section>
-    </section>
 @endsection
