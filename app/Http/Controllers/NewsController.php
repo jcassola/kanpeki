@@ -22,7 +22,6 @@ class NewsController extends Controller
             'description.max' => 'La noticia es demasiado larga',
             'picture.mimes' => 'Solo imágenes son permitidas'
         ]);
-
         $news = new News();
         $news->title = $request->input('title');
         $news->text = $request->input('text');

@@ -20,7 +20,6 @@ class AuthorsController extends Controller
             'nick.unique' => 'Ya existe un artista con ese nick',
             'picture.mimes' => 'Solo imágenes son permitidas'
         ]);
-
         $author = new Author();
         $author->name = $request->input('name');
         $author->nick = $request->input('nick');

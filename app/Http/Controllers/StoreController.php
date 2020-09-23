@@ -22,7 +22,6 @@ class StoreController extends Controller
             'description.max' => 'La descripción del artículo es demasiado larga',
             'picture.mimes' => 'Solo imágenes son permitidas'
         ]);
-
         $item = new Item();
         $item->name = $request->input('name');
         $item->description = $request->input('description');
