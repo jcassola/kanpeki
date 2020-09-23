@@ -5,10 +5,10 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Nuevo Evento') }}</div>
+                    <div class="card-header">{{ __('Nueva Noticia') }}</div>
                     <div class="card-body">
 
-                        <form enctype="multipart/form-data" method="POST" action="{{ url('/events/new') }}">
+                        <form enctype="multipart/form-data" method="POST" action="{{ url('/news/new') }}">
                             @csrf
                             <div class="form-group">
                                 <label>Título:</label>
@@ -25,19 +25,13 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Descripción:</label>
-                                <textarea type="text" name="description" class="form-control"></textarea>
-                                @error('description')
+                                <label>Texto:</label>
+                                <textarea type="text" name="text" class="form-control"></textarea>
+                                @error('text')
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-                            <div class="form-group">
-                                <label for="when">Fecha:</label>
-                                <input type="date" name="when" class="form-control">
-                                @error('when')
-                                <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror
-                            </div>
+
                             <div class="form-group">
                                 <button class="btn btn-success btn-submit">Agregar</button>
                             </div>

@@ -28,12 +28,12 @@
     </nav>
     <vue-spacer space="20"></vue-spacer>
     <div class="row justify-content-center">
-        @foreach ($items as $item)
+        @foreach ($news as $news)
             <bootstrap-news-card
-                    news-picture-url="{{ $item->picture }}"
-                    news-name="{{ $item->name }}"
-                    news-description="{{ $item->description }}"
-                    news-price="{{ $item->date }}" >
+                    news-picture-url="{{ $news->picture }}"
+                    news-title="{{ $news->title }}"
+                    news-text="{{ $news->text }}"
+                    news-date="{{ $news->created_at }}" >
             </bootstrap-news-card>
         @endforeach
     </div>

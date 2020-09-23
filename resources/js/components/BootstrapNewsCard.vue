@@ -3,8 +3,8 @@
     <div class="card">
       <img class="card-img-top" src="newsPictureUrl" alt="Un producto" />
       <div class="card-body">
-        <h5 class="card-title">{{ newsName }}</h5>
-        <p class="card-text text-secondary">{{ newsDescription }}</p>
+        <h5 class="card-title">{{ newsTitle }}</h5>
+        <p class="card-text text-secondary">{{ newsText }}</p>
         <p class="card-text">{{ newsDate }}</p>
       </div>
       <div class="card-body">
@@ -20,8 +20,8 @@
 export default {
   props: [
     "newsPictureUrl",
-    "newsName",
-    "newsDescription",
+    "newsTitle",
+    "newsText",
     "newsDate"
   ],
   name: "BootstrapNewsCard"

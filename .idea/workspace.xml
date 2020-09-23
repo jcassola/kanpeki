@@ -3,9 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="d511fe7f-2643-4bc6-a057-4eb6160e9bbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/MainController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/app.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/metadata.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/metadata.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BootstrapNavbarLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BootstrapNavbarLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BootstrapNewsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BootstrapNewsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -116,7 +119,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
@@ -124,8 +127,9 @@
       <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\kanpeki\resources\views\layouts" />
+      <recent name="C:\xampp\htdocs\kanpeki\public" />
       <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
+      <recent name="C:\xampp\htdocs\kanpeki\resources\views\layouts" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -199,11 +203,26 @@
       <workItem from="1600524332854" duration="1796000" />
       <workItem from="1600712561507" duration="506000" />
       <workItem from="1600713301074" duration="166000" />
+      <workItem from="1600742357003" duration="4638000" />
+      <workItem from="1600830103009" duration="623000" />
+      <workItem from="1600880438758" duration="1246000" />
+      <workItem from="1600882385082" duration="3739000" />
+      <workItem from="1600888701332" duration="2497000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
