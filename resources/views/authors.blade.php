@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
 <vue-section title="Autores">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">

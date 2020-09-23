@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
 <vue-section title="Acerca de nosotros">
     <div class="row justify-content-center">

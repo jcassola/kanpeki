@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
 
 <div class="container">
@@ -113,11 +115,6 @@
                     <img src="{{ asset('images/logo.jpg') }}" class="img-fluid" alt="Events images" srcset="">
                 </div>
             </div>
-        </vue-section>
-    </section>
-    <section>
-        <vue-section :has-padding="false" class="bg-dark">
-            <social-links></social-links>
         </vue-section>
     </section>
 @endsection
