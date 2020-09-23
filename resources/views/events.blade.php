@@ -4,6 +4,7 @@
 
 @section('content')
 <vue-section title="Eventos">
+    <vue-spacer space="20"></vue-spacer>
     <div class="row justify-content-center">
         @foreach ($events as $event)
         <div class="col-md-12">
@@ -12,9 +13,12 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $event->title }}</h5>
                     <p class="card-text">{{ $event->description }}</p>
-                    <a href="#" class="btn btn-primary">Ver Detalles</a>
+                    <button href="#" class="btn btn-outline-success">
+                        <span class="mdi mdi-eye"></span>
+                    </button>
                 </div>
             </div>
+            <vue-spacer space="10"></vue-spacer>
         </div>
         @endforeach
     </div>
