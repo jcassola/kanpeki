@@ -25,7 +25,7 @@
 </head>
 <body>
     <div id="app">
-        <bootstrap-navbar>
+        <bootstrap-navbar current-route="@yield('route')">
             <!-- Authentication Links -->
             @guest
                 <li class="nav-item">
