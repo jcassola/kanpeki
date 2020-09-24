@@ -1,0 +1,58 @@
+<template>
+  <button @click="topFunction" id="floating-button" title="Go to top">Top</button>
+</template>
+
+<script>
+export default {
+  name: "VueBackToTop",
+  data() {
+    return {
+      floatingButton: null
+    };
+  },
+  mounted() {
+    this.floatingButton = document.getElementById("floating-button");
+    window.onscroll = () => {
+      this.scrollFunction(this.floatingButton);
+    };
+  },
+  methods: {
+    scrollFunction(mybutton) {
+      if (
+        document.body.scrollTop > 20 ||
+        document.documentElement.scrollTop > 20
+      ) {
+        mybutton.style.display = "block";
+        console.log(mybutton);
+      } else {
+        mybutton.style.display = "none";
+      }
+    },
+    topFunction() {
+      document.documentElement.scrollTop = 0;
+    }
+  }
+};
+</script>
+
+<style scoped>
+#floating-button {
+  display: none; /* Hidden by default */
+  position: fixed; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+</style>
