@@ -26,27 +26,27 @@ export default {
           public: "Inicio"
         },
         {
-          route: "news",
+          route: "/news",
           name: "news",
           public: "Noticias"
         },
         {
-          route: "events",
+          route: "/events",
           name: "events",
           public: "Eventos"
         },
         {
-          route: "store",
+          route: "/store",
           name: "store",
           public: "Tienda"
         },
         {
-          route: "authors",
+          route: "/authors",
           name: "authors",
           public: "Autores"
         },
         {
-          route: "about",
+          route: "/about",
           name: "about",
           public: "Nosotros"
         }
