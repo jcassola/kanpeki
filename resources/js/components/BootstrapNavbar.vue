@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="images/logo1.png" alt="Logo" style="width:80px;" />
+        <img src="/images/logo1.png" alt="Logo" style="width:80px;" />
       </a>
       <button
         class="navbar-toggler"
