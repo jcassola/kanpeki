@@ -1,5 +1,7 @@
 <template>
-  <button @click="topFunction" id="floating-button" title="Go to top">Top</button>
+  <button @click="topFunction" id="floating-button" title="Go to top">
+    Top
+  </button>
 </template>
 
 <script>
@@ -29,7 +31,11 @@ export default {
       }
     },
     topFunction() {
-      document.documentElement.scrollTop = 0;
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "smooth"
+      });
     }
   }
 };
