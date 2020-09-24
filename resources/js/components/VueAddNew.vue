@@ -13,11 +13,12 @@ export default {
 };
 </script>
 
-<style scoped>
+
+<style lang="scss" scoped>
 #floating-button {
   position: fixed; /* Fixed/sticky position */
-  top: 100px; /* Place the button at the bottom of the page */
-  right: 80px; /* Place the button 30px from the right */
+  top: 120px; /* Place the button at the bottom of the page */
+  right: 240px; /* Place the button 30px from the right */
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
@@ -31,5 +32,33 @@ export default {
 
 #floating-button:hover {
   background-color: #719d43; /* Add a dark-grey background on hover */
+}
+
+@media only screen and (max-width: 1200px) {
+  #floating-button {
+    right: 20px; /* Place the button 30px from the right */
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  #floating-button {
+    right: 20px; /* Place the button 30px from the right */
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #floating-button {
+    right: 10px;
+    bottom: 20px; /* Place the button at the bottom of the page */
+    top: unset;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  #floating-button {
+    right: 10;
+    bottom: 5px;
+    top: unset;
+  }
 }
 </style>
