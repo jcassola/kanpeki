@@ -4,9 +4,11 @@
 
 @section('content')
 
-<div class="container">
-    <bootstrap-carousel></bootstrap-carousel>
-</div>
+    <vue-back-to-top></vue-back-to-top>
+
+    <div class="container">
+        <bootstrap-carousel></bootstrap-carousel>
+    </div>
 
     <section>
         <vue-section title="Noticias">
