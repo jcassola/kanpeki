@@ -1,6 +1,6 @@
 <template>
   <button @click="topFunction" id="floating-button" title="Go to top">
-    Top
+    <span class="mdi mdi-arrow-up"></span>
   </button>
 </template>
 
@@ -50,15 +50,15 @@ export default {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: red; /* Set a background color */
+  background-color: #007344; /* Set a background color */
   color: white; /* Text color */
-  cursor: pointer; /* Add a mouse pointer on hover */
-  padding: 15px; /* Some padding */
-  border-radius: 10px; /* Rounded corners */
-  font-size: 18px; /* Increase font size */
+  border-radius: 50%; /* Rounded corners */
+  width: 80px;
+  height: 80px;
+  font-size: 3em; /* Increase font size */
 }
 
-#myBtn:hover {
-  background-color: #555; /* Add a dark-grey background on hover */
+#floating-button:hover {
+  background-color: #719d43; /* Add a dark-grey background on hover */
 }
 </style>
