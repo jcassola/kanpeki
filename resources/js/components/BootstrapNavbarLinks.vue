@@ -21,7 +21,7 @@ export default {
     return {
       routes: [
         {
-          route: "home",
+          route: "/home",
           name: "home",
           public: "Inicio"
         },
