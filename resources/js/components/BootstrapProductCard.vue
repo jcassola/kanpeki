@@ -1,7 +1,7 @@
 <template>
   <div class="col-md-3">
     <div class="card">
-      <img class="card-img-top" src="productPictureUrl" alt="Un producto" />
+      <img class="card-img-top" :src="productPictureUrl" alt="Un producto" />
       <div class="card-body">
         <h5 class="card-title">{{ productName }}</h5>
         <p class="card-text text-secondary">{{ productDescription }}</p>

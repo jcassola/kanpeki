@@ -1,9 +1,9 @@
 <template>
   <div class="col-md-3">
     <div class="card">
-      <img class="card-img-top" src="newsPictureUrl" alt="Un producto" />
+      <img class="card-img-top" :src="newsPictureUrl" alt="Una noticia" />
       <div class="card-body">
-        <h5 class="card-title">{{ newsTitle }}</h5>
+        <h5 class="card-title" >{{ newsTitle }}</h5>
         <p class="card-text text-secondary">{{ newsText }}</p>
         <p class="card-text">{{ newsDate }}</p>
       </div>

@@ -12,7 +12,7 @@
         @foreach ($events as $event)
         <div class="col-md-12">
             <div class="card">
-                <img class="card-img-top" src="{{ $event->picture }}" alt="Un producto">
+                <img class="card-img-top" src="{{ $event->getUrlPicture() }}" alt="Un evento">
                 <div class="card-body">
                     <h5 class="card-title">{{ $event->title }}</h5>
                     <p class="card-text">{{ $event->description }}</p>

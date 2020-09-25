@@ -34,9 +34,9 @@
                             <div class="form-group">
                                 <label>Categoría:</label>
                             <select name="category">
-                                <option value="dibujo" selected>Dibujo</option>
-                                <option value="musica">Música</option>
-                                <option value="videos">Videos</option>
+                                <option value="Dibujo" selected>Dibujo</option>
+                                <option value="Música">Música</option>
+                                <option value="Videos">Videos</option>
                             </select>
                             </div>
                             <div class="form-group">

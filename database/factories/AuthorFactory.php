@@ -11,6 +11,6 @@ $factory->define(Author::class, function (Faker $faker) {
         'nick' => $faker->unique()->name,
         'picture' => $faker->md5().".jpg",
         'description' => $faker->text,
-        'category' => $faker->randomElement(array('musica', 'dibujo', 'videos')),
+        'category' => $faker->randomElement(array('Música', 'Dibujo', 'Videos')),
     ];
 });
