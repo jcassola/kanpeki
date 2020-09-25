@@ -6867,7 +6867,11 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
+<<<<<<< HEAD
 exports.push([module.i, "\n.carousel img[data-v-39026c13] {\n  top: 0;\n  left: 0;\n  min-width: 100%;\n  height: auto;\n  width: auto;\n}\n", ""]);
+=======
+exports.push([module.i, "\n.carousel img[data-v-39026c13] {\r\n  top: 0;\r\n  left: 0;\r\n  min-width: 100%;\r\n  height: auto;\r\n  width: auto;\n}\r\n", ""]);
+>>>>>>> develop
 
 // exports
 
@@ -6886,7 +6890,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-0b4b99b6] {\n  height: 400px;\n  margin-bottom: 24px;\n}\n", ""]);
+exports.push([module.i, "\n.card[data-v-0b4b99b6] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\r\n", ""]);
 
 // exports
 
@@ -6905,7 +6909,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-0a1d9488] {\n  height: 400px;\n  margin-bottom: 24px;\n}\n", ""]);
+exports.push([module.i, "\n.card[data-v-0a1d9488] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\r\n", ""]);
 
 // exports
 
@@ -6925,6 +6929,25 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 // module
 exports.push([module.i, "\n#floating-button[data-v-79691ab8] {\n  display: none; /* Hidden by default */\n  position: fixed; /* Fixed/sticky position */\n  bottom: 20px; /* Place the button at the bottom of the page */\n  right: 30px; /* Place the button 30px from the right */\n  z-index: 99; /* Make sure it does not overlap */\n  border: none; /* Remove borders */\n  outline: none; /* Remove outline */\n  background-color: #007344; /* Set a background color */\n  color: white; /* Text color */\n  border-radius: 50%; /* Rounded corners */\n  width: 80px;\n  height: 80px;\n  font-size: 3em; /* Increase font size */\n}\n#floating-button[data-v-79691ab8]:hover {\n  background-color: #719d43; /* Add a dark-grey background on hover */\n}\n", ""]);
+
+// exports
+
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/index.js?!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src/index.js?!./node_modules/vue-loader/lib/index.js?!./resources/js/components/VueRoundImage.vue?vue&type=style&index=0&id=c7673e90&scoped=true&lang=css&":
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/css-loader??ref--6-1!./node_modules/vue-loader/lib/loaders/stylePostLoader.js!./node_modules/postcss-loader/src??ref--6-2!./node_modules/vue-loader/lib??vue-loader-options!./resources/js/components/VueRoundImage.vue?vue&type=style&index=0&id=c7673e90&scoped=true&lang=css& ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loader/lib/css-base.js */ "./node_modules/css-loader/lib/css-base.js")(false);
+// imports
+
+
+// module
+exports.push([module.i, "\nimg[data-v-c7673e90] {\n  border-radius: 50%;\n}\n", ""]);
 
 // exports
 

@@ -33,8 +33,8 @@ class NewsController extends Controller
         $news->save();
         return redirect('/news');
     }
-    public function showNews(Request $request){
-        $news = News::findOrFail($request->input('id'));
+    public function showNews($id){
+        $news = News::findOrFail($id);
         return view('showNews')->with('news', $news);
     }
 }

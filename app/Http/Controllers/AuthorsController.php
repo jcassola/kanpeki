@@ -33,8 +33,8 @@ class AuthorsController extends Controller
         $author->save();
         return redirect('/authors');
     }
-    public function showAuthor(Request $request){
-        $author = Author::findOrFail($request->input('id'));
+    public function showAuthor($id){
+        $author = Author::findOrFail($id);
         return view('showAuthor')->with('author', $author);
     }
 }

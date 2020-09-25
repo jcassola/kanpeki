@@ -3,15 +3,15 @@
 @section('content')
     <div class="row">
         <div class="col-md-4">
-            <h4>{{ $event->name }}</h4>
+            <h4>{{ $event->title }}</h4>
             <p>{{ $event->when }}</p>
         </div>
         <div class="col-md-8"></div>
-            <img src="{{$event->picture}}" alt="">
+            <img src="{{$event->getUrlPicture()}}" alt="">
         </div>
-        <h5>Descripcion</h5>
+{{--        <h5>Descripción</h5>--}}
         <div class="col-md-12">
-            <p>{{ $event->text }}</p>
+            <p>{{ $event->description }}</p>
         </div>
     </div>
 @endsection
