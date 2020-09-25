@@ -3,11 +3,11 @@
 @section('content')
 <div class="row">
     <div class="col-md-8">
-        <img src="{{$item->picture}}" alt="">
+        <img src="{{$item->getUrlPicture()}}" alt="">
     </div>
     <div class="col-md-4">
         <h4>{{ $item->name }}</h4>
-        <p>{{ $item->price }}</p>
+        <p>${{ $item->price }}</p>
     </div>
     <div class="col-md-12">
         <p>{{ $item->description }}</p>

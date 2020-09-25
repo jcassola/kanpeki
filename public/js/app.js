@@ -6943,7 +6943,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nimg[data-v-c7673e90] {\r\n  border-radius: 50%;\n}\r\n", ""]);
+exports.push([module.i, "\nimg[data-v-c7673e90] {\n  border-radius: 50%;\n}\n", ""]);
 
 // exports
 

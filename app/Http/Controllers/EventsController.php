@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Event;
+use Cassandra\Date;
 use Illuminate\Http\Request;
 
 class EventsController extends Controller
