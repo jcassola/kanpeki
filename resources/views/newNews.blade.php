@@ -7,15 +7,15 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">{{ __('Nuevo Artículo') }}</div>
+                    <div class="card-header">{{ __('Nueva Noticia') }}</div>
                     <div class="card-body">
 
-                        <form enctype="multipart/form-data" method="POST" action="{{ url('/store/new') }}">
+                        <form enctype="multipart/form-data" method="POST" action="{{ url('/news/new') }}">
                             @csrf
                             <div class="form-group">
-                                <label>Nombre:</label>
-                                <input type="text" name="name" class="form-control">
-                                @error('name')
+                                <label>Título:</label>
+                                <input type="text" name="title" class="form-control">
+                                @error('title')
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
@@ -27,16 +27,9 @@
                                 @enderror
                             </div>
                             <div class="form-group">
-                                <label>Precio:</label>
-                                <input type="text" name="price" class="form-control">
-                                @error('price')
-                                <div class="alert alert-danger">{{ $message }}</div>
-                                @enderror
-                            </div>
-                            <div class="form-group">
-                                <label>Descripción:</label>
-                                <textarea type="text" name="description" class="form-control"></textarea>
-                                @error('description')
+                                <label>Texto:</label>
+                                <textarea type="text" name="text" class="form-control"></textarea>
+                                @error('text')
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>

@@ -1,10 +1,12 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
 
-<div class="container">
+    <vue-back-to-top></vue-back-to-top>
+
     <bootstrap-carousel></bootstrap-carousel>
-</div>
 
     <section>
         <vue-section title="Noticias">
@@ -113,11 +115,6 @@
                     <img src="{{ asset('images/logo.jpg') }}" class="img-fluid" alt="Events images" srcset="">
                 </div>
             </div>
-        </vue-section>
-    </section>
-    <section>
-        <vue-section :has-padding="false" class="bg-dark">
-            <social-links></social-links>
         </vue-section>
     </section>
 @endsection

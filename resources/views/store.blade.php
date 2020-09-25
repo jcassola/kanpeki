@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
+@auth
+    <vue-add-new href="{{ route('new_item') }}"></vue-add-new>
+@endauth
 <vue-section title="Tienda">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,10 +34,11 @@
     <div class="row justify-content-center">
         @foreach ($items as $item)
             <bootstrap-product-card
-                    product-picture-url="{{ $item->picture }}"
+                    product-picture-url="{{ $item->getUrlPicture() }}"
                     product-name="{{ $item->name }}"
                     product-description="{{ $item->description }}"
-                    product-price="{{ $item->price }}" >
+                    product-price="{{ $item->price }}"
+                    product-details-url="{{ route('item.show', [$item->id]) }}">
             </bootstrap-product-card>
         @endforeach
     </div>

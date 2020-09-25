@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
     <div class="container">
         <div class="row justify-content-center">
@@ -31,7 +33,13 @@
                                 <div class="alert alert-danger">{{ $message }}</div>
                                 @enderror
                             </div>
-
+                            <div class="form-group">
+                                <label for="when">Fecha:</label>
+                                <input type="date" name="when" class="form-control">
+                                @error('when')
+                                <div class="alert alert-danger">{{ $message }}</div>
+                                @enderror
+                            </div>
                             <div class="form-group">
                                 <button class="btn btn-success btn-submit">Agregar</button>
                             </div>

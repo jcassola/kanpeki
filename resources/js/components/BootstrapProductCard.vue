@@ -1,16 +1,18 @@
 <template>
   <div class="col-md-3">
     <div class="card">
-      <img class="card-img-top" src="productPictureUrl" alt="Un producto" />
+      <img class="card-img-top" :src="productPictureUrl" alt="Un producto" />
       <div class="card-body">
         <h5 class="card-title">{{ productName }}</h5>
         <p class="card-text text-secondary">{{ productDescription }}</p>
         <p class="card-text">{{ productPrice }}</p>
       </div>
       <div class="card-body">
-        <button href="#" class="btn btn-outline-success">
+        <a :href="productDetailsUrl">
+          <button class="btn btn-outline-success">
             <span class="mdi mdi-eye"></span>
-        </button>
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -22,7 +24,8 @@ export default {
     "productPictureUrl",
     "productName",
     "productDescription",
-    "productPrice"
+    "productPrice",
+    "productDetailsUrl"
   ],
   name: "BootstrapProductCard"
 };

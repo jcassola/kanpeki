@@ -1,6 +1,11 @@
 @extends('layouts.app')
 
+@section('route', Route::currentRouteName())
+
 @section('content')
+@auth
+    <vue-add-new href="{{ route('new_author') }}"></vue-add-new>
+@endauth
 <vue-section title="Autores">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,18 +29,32 @@
             </form>
         </div>
     </nav>
+
+    <vue-spacer space="20"></vue-spacer>
+
     <div class="row">
         @foreach ($authors as $author)
-        <div class="col-md-12">
+        <div class="col-md-6">
             <div class="card">
-                <img class="card-img-top" src="{{ $author->picture }}" alt="Un producto">
+                <img class="card-img-top" src="{{ $author->getUrlPicture() }}" alt="Un autor">
                 <div class="card-body">
-                    <h5 class="card-title">{{ $author->name }}</h5>
-                    <h5 class="card-title">{{ $author->nick }}</h5>
-                    <p class="card-text">{{ $author->category }}</p>
+                    <span>Nombre:   <span class="card-title" style="color: green">{{ $author->name }}</span></span>
+                    <br>
+                    <span>Nick:    <span class="card-title" style="color: green">{{ $author->nick }}</span></span>
+                    <br>
+                    <span>Categoría:    <span class="card-text" style="color: green">{{ $author->category }}</span></span>
+                    <br>
                     <p class="card-text">{{ $author->description }}</p>
                 </div>
+                <div class="card-body">
+                    <a href="{{ route('author.show', [$author->id]) }}">
+                        <button class="btn btn-outline-success">
+                            <span class="mdi mdi-eye"></span>
+                        </button>
+                    </a>
+                  </div>
             </div>
+            <vue-spacer space="10"></vue-spacer>
         </div>
         @endforeach
     </div>

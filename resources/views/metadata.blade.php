@@ -1,4 +1,4 @@
-<!--Web Information Meta Tags-->
+{{-- Web Information Meta Tags --}}
 <meta property="og:title" content="Se no Kanpeki-Sa" />
 <meta property="og:site_name" content="Se no Kanpeki-Sa"/>
 <meta property="og:description" content="Un lugar de juegos, animes, doramas, dibujo y todo lo que se le ocurra a los integrantes"/>
@@ -17,11 +17,10 @@
 <meta name="author" content="Se no Kanpeki-Sa">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!--Search Engine Optimization Meta Tags-->
+{{-- Search Engine Optimization Meta Tags --}}
 <meta name="robots" content="index,follow" />
 <meta name="revisit-after" content="7 days">
 <meta name="distribution" content="web">
 <meta name="robots" content="noodp">
-
 
 

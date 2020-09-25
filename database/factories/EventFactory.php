@@ -10,6 +10,7 @@ $factory->define(Event::class, function (Faker $faker) {
         'title' => $faker->title,
         'description' => $faker->text,
         'picture' => $faker->md5().".jpg",
+        'when'=>$faker->dateTime,
         'created_at' => now(),
     ];
 });
