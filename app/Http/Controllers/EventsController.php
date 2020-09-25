@@ -38,8 +38,8 @@ class EventsController extends Controller
         return redirect('/events');
     }
 
-    public function showEvent(Request $request){
-        $event = Event::findOrFail($request->input('id'));
+    public function showEvent($id){
+        $event = Event::findOrFail($id);
         return view('showEvent')->with('event', $event);
     }
 }

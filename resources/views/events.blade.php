@@ -16,7 +16,7 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $event->title }}</h5>
                     <p class="card-text">{{ $event->description }}</p>
-                    <a href="{{ route('events.show', [$event->id]) }}">
+                    <a href="{{ route('event.show', [$event->id]) }}">
                         <button class="btn btn-outline-success">
                             <span class="mdi mdi-eye"></span>
                         </button>

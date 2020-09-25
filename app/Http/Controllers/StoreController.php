@@ -34,8 +34,8 @@ class StoreController extends Controller
         $item->save();
         return redirect('/store');
     }
-    public function showItem(Request $request){
-        $item = Item::findOrFail($request->input('id'));
+    public function showItem($id){
+        $item = Item::findOrFail($id);
         return view('showItem')->with('item', $item);
     }
 }
