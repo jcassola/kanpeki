@@ -46,8 +46,7 @@ export default {
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 550px;
-  max-height: 550px;
+  height: auto;
   width: auto;
 }
 </style>
