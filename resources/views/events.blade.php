@@ -3,7 +3,9 @@
 @section('route', Route::currentRouteName())
 
 @section('content')
-<vue-add-new href="{{ route('new_event') }}"></vue-add-new>
+@auth
+    <vue-add-new href="{{ route('new_event') }}"></vue-add-new>
+@endauth
 <vue-section title="Eventos">
     <vue-spacer space="20"></vue-spacer>
     <div class="row justify-content-center">
