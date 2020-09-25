@@ -32,10 +32,10 @@
     <div class="row justify-content-center">
         @foreach ($items as $item)
             <bootstrap-product-card
-                    product-picture-url="{{ $item->picture }}"
+                    product-picture-url="{{ $item->getUrlPicture() }}"
                     product-name="{{ $item->name }}"
                     product-description="{{ $item->description }}"
-                    product-price="{{ $item->price }}" >
+                    product-price="${{ $item->price }}" >
             </bootstrap-product-card>
         @endforeach
     </div>

@@ -3,13 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="d511fe7f-2643-4bc6-a057-4eb6160e9bbb" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/AuthorFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/AuthorFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_09_05_013845_create_authors_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2020_09_05_013845_create_authors_table.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/BootstrapNavbar.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BootstrapNavbar.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/js/components/BootstrapNavbarLinks.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BootstrapNavbarLinks.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BootstrapNewsCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BootstrapNewsCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/js/components/BootstrapProductCard.vue" beforeDir="false" afterPath="$PROJECT_DIR$/resources/js/components/BootstrapProductCard.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/authors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/authors.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/events.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/events.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/newAuthor.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newAuthor.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newEvent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newEvent.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newItem.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newItem.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/newNews.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/newNews.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/news.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/store.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/store.blade.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -124,13 +127,14 @@
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\kanpeki\resources\assets\images" />
       <recent name="C:\xampp\htdocs\kanpeki\public" />
       <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
       <recent name="C:\xampp\htdocs\kanpeki\resources\views\layouts" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\kanpeki\resources\views" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -212,7 +216,9 @@
       <workItem from="1600911105371" duration="262000" />
       <workItem from="1600911979535" duration="1106000" />
       <workItem from="1600963879393" duration="1190000" />
-      <workItem from="1600965858186" duration="565000" />
+      <workItem from="1600965858186" duration="886000" />
+      <workItem from="1600973885430" duration="212000" />
+      <workItem from="1600997416808" duration="4280000" />
     </task>
     <servers />
   </component>

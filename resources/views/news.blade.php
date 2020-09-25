@@ -26,12 +26,14 @@
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
+
+
     </nav>
     <vue-spacer space="20"></vue-spacer>
     <div class="row justify-content-center">
         @foreach ($news as $news)
             <bootstrap-news-card
-                    news-picture-url="{{ $news->picture }}"
+                    news-picture-url="{{ $news->getUrlPicture() }}"
                     news-title="{{ $news->title }}"
                     news-text="{{ $news->text }}"
                     news-date="{{ $news->created_at }}" >
