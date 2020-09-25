@@ -10,7 +10,12 @@
     <!-- The slideshow -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/photo1.jpg" alt="Los Angeles" width="1100" height="500" />
+        <img
+          src="images/photo1.jpg"
+          alt="Los Angeles"
+          width="1100"
+          height="500"
+        />
       </div>
       <div class="carousel-item">
         <img src="images/photo2.jpg" alt="Chicago" width="1100" height="500" />
@@ -35,3 +40,14 @@ export default {
   name: "BootstrapCarousel"
 };
 </script>
+
+<style scoped>
+.carousel img {
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 550px;
+  max-height: 550px;
+  width: auto;
+}
+</style>

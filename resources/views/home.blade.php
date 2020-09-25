@@ -6,9 +6,7 @@
 
     <vue-back-to-top></vue-back-to-top>
 
-    <div class="container">
-        <bootstrap-carousel></bootstrap-carousel>
-    </div>
+    <bootstrap-carousel></bootstrap-carousel>
 
     <section>
         <vue-section title="Noticias">
