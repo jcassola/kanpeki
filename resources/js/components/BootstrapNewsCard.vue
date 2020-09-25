@@ -8,9 +8,11 @@
         <p class="card-text">{{ newsDate }}</p>
       </div>
       <div class="card-body">
-        <button href="#" class="btn btn-outline-success">
+        <a :href="newsDetailsUrl">
+          <button class="btn btn-outline-success">
             <span class="mdi mdi-eye"></span>
-        </button>
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -22,7 +24,8 @@ export default {
     "newsPictureUrl",
     "newsTitle",
     "newsText",
-    "newsDate"
+    "newsDate",
+    "newsDetailsUrl"
   ],
   name: "BootstrapNewsCard"
 };

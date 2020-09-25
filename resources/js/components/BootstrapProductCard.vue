@@ -8,9 +8,11 @@
         <p class="card-text">{{ productPrice }}</p>
       </div>
       <div class="card-body">
-        <button href="#" class="btn btn-outline-success">
+        <a :href="productDetailsUrl">
+          <button class="btn btn-outline-success">
             <span class="mdi mdi-eye"></span>
-        </button>
+          </button>
+        </a>
       </div>
     </div>
   </div>
@@ -22,7 +24,8 @@ export default {
     "productPictureUrl",
     "productName",
     "productDescription",
-    "productPrice"
+    "productPrice",
+    "productDetailsUrl"
   ],
   name: "BootstrapProductCard"
 };

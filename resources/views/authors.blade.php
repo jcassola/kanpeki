@@ -43,6 +43,13 @@
                     <p class="card-text">{{ $author->category }}</p>
                     <p class="card-text">{{ $author->description }}</p>
                 </div>
+                <div class="card-body">
+                    <a href="{{ route('author.show', [$author->id]) }}">
+                        <button class="btn btn-outline-success">
+                            <span class="mdi mdi-eye"></span>
+                        </button>
+                    </a>
+                  </div>
             </div>
             <vue-spacer space="10"></vue-spacer>
         </div>

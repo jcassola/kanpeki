@@ -36,7 +36,8 @@
                     news-picture-url="{{ $news->picture }}"
                     news-title="{{ $news->title }}"
                     news-text="{{ $news->text }}"
-                    news-date="{{ $news->created_at }}" >
+                    news-date="{{ $news->created_at }}"
+                    news-details-url="{{ route('news.show', [$news->id]) }}">
             </bootstrap-news-card>
         @endforeach
     </div>

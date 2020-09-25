@@ -16,9 +16,11 @@
                 <div class="card-body">
                     <h5 class="card-title">{{ $event->title }}</h5>
                     <p class="card-text">{{ $event->description }}</p>
-                    <button href="#" class="btn btn-outline-success">
-                        <span class="mdi mdi-eye"></span>
-                    </button>
+                    <a href="{{ route('events.show', [$event->id]) }}">
+                        <button class="btn btn-outline-success">
+                            <span class="mdi mdi-eye"></span>
+                        </button>
+                    </a>
                 </div>
             </div>
             <vue-spacer space="10"></vue-spacer>

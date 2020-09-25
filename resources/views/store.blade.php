@@ -37,7 +37,8 @@
                     product-picture-url="{{ $item->picture }}"
                     product-name="{{ $item->name }}"
                     product-description="{{ $item->description }}"
-                    product-price="{{ $item->price }}" >
+                    product-price="{{ $item->price }}"
+                    product-details-url="{{ route('item.show', [$item->id]) }}">
             </bootstrap-product-card>
         @endforeach
     </div>
