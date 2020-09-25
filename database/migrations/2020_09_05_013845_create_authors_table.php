@@ -19,6 +19,7 @@ class CreateAuthorsTable extends Migration
             $table->string('nick')->unique();
             $table->string('picture', 100)->default('defaultAuthor.jpeg');
             $table->mediumText('description')->nullable();
+            $table->string('category', 10);
         });
     }
 
