@@ -2336,8 +2336,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["src"],
+  props: {
+    src: {
+      type: String,
+      required: true
+    },
+    height: {
+      type: String,
+      "default": "200px"
+    },
+    width: {
+      type: String,
+      "default": "200px"
+    }
+  },
   name: "VueRoundImage"
 });
 
@@ -6867,7 +6885,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.carousel img[data-v-39026c13] {\n  top: 0;\n  left: 0;\n  min-width: 100%;\n  height: auto;\n  width: auto;\n}\n", ""]);
+exports.push([module.i, "\n.carousel img[data-v-39026c13] {\r\n  top: 0;\r\n  left: 0;\r\n  min-width: 100%;\r\n  height: auto;\r\n  width: auto;\n}\r\n", ""]);
 
 // exports
 
@@ -6886,7 +6904,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-0b4b99b6] {\n  height: 400px;\n  margin-bottom: 24px;\n}\n", ""]);
+exports.push([module.i, "\n.card[data-v-0b4b99b6] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\r\n", ""]);
 
 // exports
 
@@ -6905,7 +6923,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-0a1d9488] {\n  height: 400px;\n  margin-bottom: 24px;\n}\n", ""]);
+exports.push([module.i, "\n.card[data-v-0a1d9488] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\r\n", ""]);
 
 // exports
 
@@ -6924,7 +6942,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n#floating-button[data-v-79691ab8] {\n  display: none; /* Hidden by default */\n  position: fixed; /* Fixed/sticky position */\n  bottom: 20px; /* Place the button at the bottom of the page */\n  right: 30px; /* Place the button 30px from the right */\n  z-index: 99; /* Make sure it does not overlap */\n  border: none; /* Remove borders */\n  outline: none; /* Remove outline */\n  background-color: #007344; /* Set a background color */\n  color: white; /* Text color */\n  border-radius: 50%; /* Rounded corners */\n  width: 80px;\n  height: 80px;\n  font-size: 3em; /* Increase font size */\n}\n#floating-button[data-v-79691ab8]:hover {\n  background-color: #719d43; /* Add a dark-grey background on hover */\n}\n", ""]);
+exports.push([module.i, "\n#floating-button[data-v-79691ab8] {\r\n  display: none; /* Hidden by default */\r\n  position: fixed; /* Fixed/sticky position */\r\n  bottom: 20px; /* Place the button at the bottom of the page */\r\n  right: 30px; /* Place the button 30px from the right */\r\n  z-index: 99; /* Make sure it does not overlap */\r\n  border: none; /* Remove borders */\r\n  outline: none; /* Remove outline */\r\n  background-color: #007344; /* Set a background color */\r\n  color: white; /* Text color */\r\n  border-radius: 50%; /* Rounded corners */\r\n  width: 80px;\r\n  height: 80px;\r\n  font-size: 3em; /* Increase font size */\n}\n#floating-button[data-v-79691ab8]:hover {\r\n  background-color: #719d43; /* Add a dark-grey background on hover */\n}\r\n", ""]);
 
 // exports
 
@@ -6943,7 +6961,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nimg[data-v-c7673e90] {\n  border-radius: 50%;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-c7673e90] {\r\n  border-radius: 50%;\n}\r\n", ""]);
 
 // exports
 
@@ -6962,7 +6980,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.no-padding[data-v-3881ffaa] {\n    padding-bottom: 0px;\n    padding-top: 0px;\n}\n", ""]);
+exports.push([module.i, "\n.no-padding[data-v-3881ffaa] {\r\n    padding-bottom: 0px;\r\n    padding-top: 0px;\n}\r\n", ""]);
 
 // exports
 
@@ -39592,7 +39610,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("img", { attrs: { src: _vm.src, alt: "Avatar" } })
+  return _c("img", {
+    staticClass: "img-fluid",
+    style: { height: _vm.height, width: _vm.width },
+    attrs: { src: _vm.src, alt: "Avatar" }
+  })
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -52947,8 +52969,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /home/jose/Desktop/Kanpeki-Site/kanpeki/resources/js/app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! /home/jose/Desktop/Kanpeki-Site/kanpeki/resources/sass/app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! C:\xampp\htdocs\kanpeki\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! C:\xampp\htdocs\kanpeki\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })
