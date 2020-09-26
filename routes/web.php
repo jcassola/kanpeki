@@ -13,7 +13,7 @@
 //Auth::routes();
 
 //Main routes
-Route::view('/home', 'home')->name('home');
+Route::get('/home', 'HomeController@index')->name('home');
 Route::redirect('/', 'home');
 Route::view('/about', 'about')->name('about');
 Route::get('/events', 'EventsController@returnEvents')->name('events');
