@@ -12,6 +12,9 @@
         <vue-section title="Noticias">
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
+            <a href="{{ route('news') }}">
+                <button class="btn btn-danger">Ir a noticias</button>
+            </a>
         </vue-section>
     </section>
     <section>
@@ -20,6 +23,10 @@
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
+                    <a href="{{ route('events') }}">
+                        <button class="btn btn-danger">Ir a eventos</button>
+                    </a>
+                    <vue-spacer space="20"></vue-spacer>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('images/event.jpg') }}" class="img-fluid" alt="Events images" srcset="">
@@ -33,6 +40,10 @@
                 <div class="col-md-12">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
+                    <a href="{{ route('store') }}">
+                        <button class="btn btn-danger">Ir a la tienda</button>
+                    </a>
+                    <vue-spacer space="20"></vue-spacer>
                 </div>
                 @foreach ($items as $item)
                     <div class="col-md-4">
@@ -54,6 +65,10 @@
                 <div class="col-md-12">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
+                    <a href="{{ route('authors') }}">
+                        <button class="btn btn-danger">Ver autores</button>
+                    </a>
+                    <vue-spacer space="20"></vue-spacer>
                 </div>
                 @foreach ($authors as $author)
                     <div class="col-md-4 text-dark">
@@ -70,11 +85,16 @@
         </vue-section>
     </section>
     <section>
-        <vue-section title="Contactos">
+        <vue-section title="Acerca de nosotros">
             <div class="row">
                 <div class="col-md-6">
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
+
+                    <a href="{{ route('about') }}">
+                        <button class="btn btn-danger">Ir a informacion del grupo</button>
+                    </a>
+                    <vue-spacer space="20"></vue-spacer>
                 </div>
                 <div class="col-md-6">
                     <img src="{{ asset('images/logo.jpg') }}" class="img-fluid" alt="Events images" srcset="">
