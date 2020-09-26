@@ -16,7 +16,7 @@ class StoreController extends Controller
             'name' => 'required',
             'description' => 'required|max:300',
             'price' => 'required',
-            'picture' => 'mimes:jpeg,png,bmp,tiff',
+            'picture' => 'required|mimes:jpeg,png,bmp,tiff',
 
         ], [
             'description.max' => 'La descripción del artículo es demasiado larga',
