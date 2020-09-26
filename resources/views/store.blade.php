@@ -33,13 +33,15 @@
     <h3>Productos</h3>
     <div class="row justify-content-center">
         @foreach ($items as $item)
-            <bootstrap-product-card
-                    product-picture-url="{{ $item->getUrlPicture() }}"
-                    product-name="{{ $item->name }}"
-                    product-description="{{ $item->description }}"
-                    product-price="${{ $item->price }}"
-                    product-details-url="{{ route('item.show', [$item->id]) }}">
-            </bootstrap-product-card>
+            <div class="col-md-3">
+                <bootstrap-product-card
+                        product-picture-url="{{ $item->getUrlPicture() }}"
+                        product-name="{{ $item->name }}"
+                        product-description="{{ $item->description }}"
+                        product-price="${{ $item->price }}"
+                        product-details-url="{{ route('item.show', [$item->id]) }}">
+                </bootstrap-product-card>
+            </div>
         @endforeach
     </div>
 </vue-section>
