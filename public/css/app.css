@@ -1,34 +1,34 @@
 @import url(https://fonts.googleapis.com/css?family=Nunito);@charset "UTF-8";
 
-.app-text-color {
+.app-text-primary-color {
   color: #343a40;
 }
 
-.app-background-color {
+.app-bg-primary-color {
   background-color: #343a40;
 }
 
-.app-text-color {
+.app-text-secondary-color {
   color: #e9ecef;
 }
 
-.app-background-color {
+.app-bg-secondary-color {
   background-color: #e9ecef;
 }
 
-.app-text-color {
+.app-text-tertiary-color {
   color: #f70027;
 }
 
-.app-background-color {
+.app-bg-tertiary-color {
   background-color: #f70027;
 }
 
-.app-text-color {
+.app-text-tetrary-color {
   color: #306b41;
 }
 
-.app-background-color {
+.app-bg-tetrary-color {
   background-color: #306b41;
 }
 
