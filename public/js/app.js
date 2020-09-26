@@ -2209,8 +2209,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["productPictureUrl", "productName", "productDescription", "productPrice", "productDetailsUrl"],
   name: "BootstrapProductCard"
@@ -2336,8 +2334,26 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
 /* harmony default export */ __webpack_exports__["default"] = ({
-  props: ["src"],
+  props: {
+    src: {
+      type: String,
+      required: true
+    },
+    height: {
+      type: String,
+      "default": "200px"
+    },
+    width: {
+      type: String,
+      "default": "200px"
+    }
+  },
   name: "VueRoundImage"
 });
 
@@ -6943,7 +6959,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\nimg[data-v-c7673e90] {\n  border-radius: 50%;\n}\n", ""]);
+exports.push([module.i, "\nimg[data-v-c7673e90] {\r\n  border-radius: 50%;\n}\r\n", ""]);
 
 // exports
 
@@ -39427,30 +39443,26 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "col-md-3" }, [
-    _c("div", { staticClass: "card" }, [
-      _c("img", {
-        staticClass: "card-img-top",
-        attrs: { src: _vm.productPictureUrl, alt: "Un producto" }
-      }),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("h5", { staticClass: "card-title" }, [
-          _vm._v(_vm._s(_vm.productName))
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "card-text text-secondary" }, [
-          _vm._v(_vm._s(_vm.productDescription))
-        ]),
-        _vm._v(" "),
-        _c("p", { staticClass: "card-text" }, [
-          _vm._v(_vm._s(_vm.productPrice))
-        ])
+  return _c("div", { staticClass: "card" }, [
+    _c("img", {
+      staticClass: "card-img-top",
+      attrs: { src: _vm.productPictureUrl, alt: "Un producto" }
+    }),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [
+      _c("h5", { staticClass: "card-title" }, [
+        _vm._v(_vm._s(_vm.productName))
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("a", { attrs: { href: _vm.productDetailsUrl } }, [_vm._m(0)])
-      ])
+      _c("p", { staticClass: "card-text text-secondary" }, [
+        _vm._v(_vm._s(_vm.productDescription))
+      ]),
+      _vm._v(" "),
+      _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.productPrice))])
+    ]),
+    _vm._v(" "),
+    _c("div", { staticClass: "card-body" }, [
+      _c("a", { attrs: { href: _vm.productDetailsUrl } }, [_vm._m(0)])
     ])
   ])
 }
@@ -39592,7 +39604,11 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("img", { attrs: { src: _vm.src, alt: "Avatar" } })
+  return _c("img", {
+    staticClass: "img-fluid",
+    style: { height: _vm.height, width: _vm.width },
+    attrs: { src: _vm.src, alt: "Avatar" }
+  })
 }
 var staticRenderFns = []
 render._withStripped = true
