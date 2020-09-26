@@ -34,36 +34,17 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Un producto">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver en la tienda</a>
-                        </div>
+                @foreach ($items as $item)
+                    <div class="col-md-4">
+                        <bootstrap-product-card
+                                product-picture-url="{{ $item->getUrlPicture() }}"
+                                product-name="{{ $item->name }}"
+                                product-description="{{ $item->description }}"
+                                product-price="${{ $item->price }}"
+                                product-details-url="{{ route('item.show', [$item->id]) }}">
+                        </bootstrap-product-card>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Un producto">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver en la tienda</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img class="card-img-top" src="..." alt="Un producto">
-                        <div class="card-body">
-                            <h5 class="card-title">Nombre del producto</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            <a href="#" class="btn btn-primary">Ver en la tienda</a>
-                        </div>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </vue-section>
     </section>
