@@ -1,18 +1,19 @@
-$primary-color: #343a40;
-$secondary-color: #e9ecef;
-$tertiary-color: #f70027;
-$tetrary-color: #306b41;
+$app-colors : (
+    primary-color: #343a40,
+    secondary-color: #e9ecef,
+    tertiary-color: #f70027,
+    tetrary-color: #306b41
+);
 
-@mixin make-app-color($color) {
-    .app-text-color {
-        color: $color;
-    };
-    .app-background-color {
-        background-color: $color;
-    };
+@mixin make-app-colors($colors) {
+    @each $name, $color in $colors {
+        .app-text-#{$name} {
+            color: $color;
+        };
+        .app-bg-#{$name} {
+            background-color: $color;
+        };
+    }
 }
 
-@include make-app-color($primary-color);
-@include make-app-color($secondary-color);
-@include make-app-color($tertiary-color);
-@include make-app-color($tetrary-color);
+@include make-app-colors($app-colors);

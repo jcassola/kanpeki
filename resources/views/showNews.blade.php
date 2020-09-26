@@ -1,11 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="row">
-        <div class="col-md-12">
-            <h4>{{ $news->title }}</h4>
-            <img src="{{$news->getUrlPicture()}}" alt="">
-            <p>{{ $news->text }}</p>
+    <vue-spacer space="20"></vue-spacer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1>{{ $news->title }}</h1>
+                <img class="img-fluid" src="{{$news->getUrlPicture()}}" alt="">
+                <p>{{ $news->text }}</p>
+            </div>
         </div>
     </div>
+    <vue-spacer space="20"></vue-spacer>
 @endsection

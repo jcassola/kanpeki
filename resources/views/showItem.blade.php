@@ -1,16 +1,21 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="row">
-    <div class="col-md-8">
-        <img src="{{$item->getUrlPicture()}}" alt="">
+    <vue-spacer space="20"></vue-spacer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-8">
+                <img class="img-fluid" src="{{$item->getUrlPicture()}}" alt="">
+            </div>
+            <div class="col-md-4">
+                <h2>{{ $item->name }}</h4>
+                <h3>${{ $item->price }}</h2>
+            </div>
+            <div class="col-md-12">
+                <h4>Descripcion</h3>
+                <p>{{ $item->description }}</p>
+            </div>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h4>{{ $item->name }}</h4>
-        <p>${{ $item->price }}</p>
-    </div>
-    <div class="col-md-12">
-        <p>{{ $item->description }}</p>
-    </div>
-</div>
+    <vue-spacer space="20"></vue-spacer>
 @endsection
