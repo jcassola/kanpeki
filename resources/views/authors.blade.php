@@ -36,23 +36,16 @@
         @foreach ($authors as $author)
         <div class="col-md-6">
             <div class="card">
-                <img class="card-img-top" src="{{ $author->getUrlPicture() }}" alt="Un autor">
+                <a href="{{ route('author.show', [$author->id]) }}">
+                    <img class="card-img-top" src="{{ $author->getUrlPicture() }}" alt="Un autor">
+                </a>
+
                 <div class="card-body">
-                    <span>Nombre:   <span class="card-title" style="color: green">{{ $author->name }}</span></span>
-                    <br>
-                    <span>Nick:    <span class="card-title" style="color: green">{{ $author->nick }}</span></span>
-                    <br>
-                    <span>Categoría:    <span class="card-text" style="color: green">{{ $author->category }}</span></span>
-                    <br>
+                    <p>Nombre:   <span class="app-text-tetrary-color">{{ $author->name }}</span></p>
+                    <p>Nick:    <span class="app-text-tetrary-color">{{ $author->nick }}</span></p>
+                    <p>Categoría:    <span class="app-text-tetrary-color">{{ $author->category }}</span></p>
                     <p class="card-text">{{ $author->description }}</p>
                 </div>
-                <div class="card-body">
-                    <a href="{{ route('author.show', [$author->id]) }}">
-                        <button class="btn btn-outline-success">
-                            <span class="mdi mdi-eye"></span>
-                        </button>
-                    </a>
-                  </div>
             </div>
             <vue-spacer space="10"></vue-spacer>
         </div>
