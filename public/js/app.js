@@ -2170,11 +2170,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ["newsPictureUrl", "newsTitle", "newsText", "newsDate", "newsDetailsUrl"],
   name: "BootstrapNewsCard"
@@ -2191,11 +2186,6 @@ __webpack_require__.r(__webpack_exports__);
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
-//
-//
-//
-//
-//
 //
 //
 //
@@ -6902,7 +6892,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-0b4b99b6] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\r\n", ""]);
+exports.push([module.i, "\n.card[data-v-0b4b99b6] {\r\n  height: 400px;\r\n  margin-bottom: 8px;\n}\n#new-title[data-v-0b4b99b6] {\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\n#news-description[data-v-0b4b99b6] {\r\n  height: 140px;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\r\n", ""]);
 
 // exports
 
@@ -6921,7 +6911,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-exports.push([module.i, "\n.card[data-v-0a1d9488] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\r\n", ""]);
+exports.push([module.i, "\n.card[data-v-0a1d9488] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\n#product-title[data-v-0a1d9488] {\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\n#product-description[data-v-0a1d9488] {\r\n  height: 140px;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\r\n", ""]);
 
 // exports
 
@@ -39296,7 +39286,7 @@ var staticRenderFns = [
     return _c("a", { staticClass: "navbar-brand", attrs: { href: "/" } }, [
       _c("img", {
         staticStyle: { width: "80px" },
-        attrs: { src: "/images/logo1.png", alt: "Logo" }
+        attrs: { src: "/images/logo-navbar.png", alt: "Logo" }
       })
     ])
   },
@@ -39389,39 +39379,33 @@ var render = function() {
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "col-md-3" }, [
     _c("div", { staticClass: "card" }, [
-      _c("img", {
-        staticClass: "card-img-top",
-        attrs: { src: _vm.newsPictureUrl, alt: "Una noticia" }
-      }),
+      _c("a", { attrs: { href: _vm.newsDetailsUrl } }, [
+        _c("img", {
+          staticClass: "card-img-top",
+          attrs: { src: _vm.newsPictureUrl, alt: "Una noticia" }
+        })
+      ]),
       _vm._v(" "),
       _c("div", { staticClass: "card-body" }, [
         _c("h5", { staticClass: "card-title" }, [
           _vm._v(_vm._s(_vm.newsTitle))
         ]),
         _vm._v(" "),
-        _c("p", { staticClass: "card-text text-secondary" }, [
-          _vm._v(_vm._s(_vm.newsText))
-        ]),
+        _c(
+          "p",
+          {
+            staticClass: "card-text text-secondary",
+            attrs: { id: "news-description" }
+          },
+          [_vm._v(_vm._s(_vm.newsText))]
+        ),
         _vm._v(" "),
         _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.newsDate))])
-      ]),
-      _vm._v(" "),
-      _c("div", { staticClass: "card-body" }, [
-        _c("a", { attrs: { href: _vm.newsDetailsUrl } }, [_vm._m(0)])
       ])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("button", { staticClass: "btn btn-outline-success" }, [
-      _c("span", { staticClass: "mdi mdi-eye" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39444,38 +39428,32 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { staticClass: "card" }, [
-    _c("img", {
-      staticClass: "card-img-top",
-      attrs: { src: _vm.productPictureUrl, alt: "Un producto" }
-    }),
-    _vm._v(" "),
-    _c("div", { staticClass: "card-body" }, [
-      _c("h5", { staticClass: "card-title" }, [
-        _vm._v(_vm._s(_vm.productName))
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "card-text text-secondary" }, [
-        _vm._v(_vm._s(_vm.productDescription))
-      ]),
-      _vm._v(" "),
-      _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.productPrice))])
+    _c("a", { attrs: { href: _vm.productDetailsUrl } }, [
+      _c("img", {
+        staticClass: "card-img-top",
+        attrs: { src: _vm.productPictureUrl, alt: "Un producto" }
+      })
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "card-body" }, [
-      _c("a", { attrs: { href: _vm.productDetailsUrl } }, [_vm._m(0)])
+      _c("h5", { staticClass: "card-title", attrs: { id: "product-title" } }, [
+        _vm._v(_vm._s(_vm.productName))
+      ]),
+      _vm._v(" "),
+      _c(
+        "p",
+        {
+          staticClass: "card-text text-secondary",
+          attrs: { id: "product-description" }
+        },
+        [_vm._v(_vm._s(_vm.productDescription))]
+      ),
+      _vm._v(" "),
+      _c("p", { staticClass: "card-text" }, [_vm._v(_vm._s(_vm.productPrice))])
     ])
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("button", { staticClass: "btn btn-outline-success" }, [
-      _c("span", { staticClass: "mdi mdi-eye" })
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
