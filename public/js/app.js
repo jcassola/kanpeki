@@ -6892,11 +6892,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-<<<<<<< HEAD
 exports.push([module.i, "\n.card[data-v-0b4b99b6] {\n  height: 400px;\n  margin-bottom: 8px;\n}\n#new-title[data-v-0b4b99b6] {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n#news-description[data-v-0b4b99b6] {\n  height: 140px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n", ""]);
-=======
-exports.push([module.i, "\n.card[data-v-0b4b99b6] {\r\n  height: 400px;\r\n  margin-bottom: 8px;\n}\n#new-title[data-v-0b4b99b6] {\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\n#news-description[data-v-0b4b99b6] {\r\n  height: 140px;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\r\n", ""]);
->>>>>>> develop
 
 // exports
 
@@ -6915,11 +6911,7 @@ exports = module.exports = __webpack_require__(/*! ../../../node_modules/css-loa
 
 
 // module
-<<<<<<< HEAD
 exports.push([module.i, "\n.card[data-v-0a1d9488] {\n  height: 400px;\n  margin-bottom: 24px;\n}\n#product-title[data-v-0a1d9488] {\n  white-space: nowrap;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n#product-description[data-v-0a1d9488] {\n  height: 140px;\n  overflow: hidden;\n  text-overflow: ellipsis;\n}\n", ""]);
-=======
-exports.push([module.i, "\n.card[data-v-0a1d9488] {\r\n  height: 400px;\r\n  margin-bottom: 24px;\n}\n#product-title[data-v-0a1d9488] {\r\n  white-space: nowrap;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\n#product-description[data-v-0a1d9488] {\r\n  height: 140px;\r\n  overflow: hidden;\r\n  text-overflow: ellipsis;\n}\r\n", ""]);
->>>>>>> develop
 
 // exports
 
