@@ -24,7 +24,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
 
     {{-- Site icon --}}
-    <link rel="Shortcut icon" type="image/jpg" href="{{ asset('images/logo-navbar.png') }}"/>
+    <link rel="icon" href="{{ asset('images/logo-navbar.png') }}"/>
 </head>
 <body>
     <div id="app">
