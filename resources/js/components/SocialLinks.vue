@@ -1,13 +1,10 @@
 <template>
   <div id="social">
-    <a href="#">
+    <a href="https://www.facebook.com/ProyectoSeNoKanpekiSa/">
       <span class="mdi mdi-facebook social-icons"></span>
     </a>
-    <a href="#">
+    <a href="https://www.youtube.com/channel/UCeYDCCevLQKKUlPWVHh9qDw">
       <span class="mdi mdi-youtube social-icons"></span>
-    </a>
-    <a href="#">
-      <span class="mdi mdi-gmail social-icons"></span>
     </a>
   </div>
 </template>
