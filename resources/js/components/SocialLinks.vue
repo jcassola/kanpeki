@@ -6,6 +6,9 @@
     <a href="https://www.youtube.com/channel/UCeYDCCevLQKKUlPWVHh9qDw">
       <span class="mdi mdi-youtube social-icons"></span>
     </a>
+    <a href="https://t.me/SeNoKanpekiSaProject">
+      <span class="mdi mdi-telegram social-icons"></span>
+    </a>
   </div>
 </template>
 
