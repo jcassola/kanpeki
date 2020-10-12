@@ -11,36 +11,21 @@
               style="width:80px;"
             />
             <p>
-              Natus eget occaecati, lobortis, vestibulum nam eros, risus lacinia
-              lacus.Lorem accusantium.
+              Somos un proyecto Santiaguero que abarca la cultura pop asiatica y occidental
             </p>
           </div>
           <div class="col-12 col-md-4">
-            <h3 class="padding-bottom-40 text-center">Contact details</h3>
+            <h3 class="padding-bottom-40 text-center">Detalles de contactos</h3>
             <ul class="fa-ul margin-left-25">
               <li class="padding-bottom-20 padding-left-5">
                 <span class="fa-li">
-                  <i class="fa fa-map-marker"></i>
-                </span>
-                125, Central Square,New York
-              </li>
-              <li class="padding-bottom-20 padding-left-5">
-                <span class="fa-li">
-                  <i class="fas fa-phone"></i>
-                </span>
-                91 123-456-7890/91
-              </li>
-              <li class="padding-bottom-20 padding-left-5">
-                <span class="fa-li">
-                  <i class="fa fa-mobile"></i>
+                  <i class="mdi mdi-phone"></i>
                 </span>
                 (002) 123-4567
               </li>
               <li class="padding-bottom-20 padding-left-5">
-                <span class="fa-li">
-                  <i class="fa fa-envelope"></i>
-                </span>
-                Info@Example.Com
+                <span class="mdi mdi-email"></span>
+                roswellh@nauta.cu
               </li>
             </ul>
           </div>
@@ -52,16 +37,7 @@
                   <span class="fa-li">
                     <i class="fa fa-link"></i>
                   </span>
-                  About us
-                </a>
-              </li>
-              <li class="padding-bottom-20 padding-left-5">
-                <a href class="color-principal">
-
-                  <span class="fa-li">
-                    <i class="fa fa-link"></i>
-                  </span>
-                  Go to the contact page
+                  Acerca de nosotros
                 </a>
               </li>
             </ul>
