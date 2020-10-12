@@ -21,7 +21,7 @@
                 <span class="fa-li">
                   <i class="mdi mdi-phone"></i>
                 </span>
-                (002) 123-4567
+                05 3087308
               </li>
               <li class="padding-bottom-20 padding-left-5">
                 <span class="mdi mdi-email"></span>
@@ -54,3 +54,9 @@ export default {
   name: "AppFooter"
 };
 </script>
+
+<style scoped>
+ul {
+    list-style-type: none;
+}
+</style>
