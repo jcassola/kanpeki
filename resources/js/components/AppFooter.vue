@@ -10,9 +10,6 @@
               class="site-logo text-center"
               style="width:80px;"
             />
-            <p>
-              Somos un proyecto Santiaguero que abarca la cultura pop asiatica y occidental
-            </p>
           </div>
           <div class="col-12 col-md-4">
             <h3 class="padding-bottom-40 text-center">Detalles de contactos</h3>
@@ -29,18 +26,8 @@
               </li>
             </ul>
           </div>
-          <div class="col-12 col-md-4">
-            <h3 class="padding-bottom-40 text-center">Important links</h3>
-            <ul class="fa-ul margin-left-25">
-              <li class="padding-bottom-20 padding-left-5">
-                <a href = "/about" class="color-principal">
-                  <span class="fa-li">
-                    <i class="fa fa-link"></i>
-                  </span>
-                  Acerca de nosotros
-                </a>
-              </li>
-            </ul>
+          <div class="col-12 col-md-4 mt-0 pt-0">
+            <social-links></social-links>
           </div>
         </div>
         <div class="text-center padding-top-30 padding-bottom-30">Copyright © 2020 Se no Kanpeki-Sa</div>
