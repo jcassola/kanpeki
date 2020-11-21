@@ -9,9 +9,10 @@
 <bootstrap-carousel></bootstrap-carousel>
 
 <section>
-    <vue-section title="Noticias">
+    <vue-section>
         <div class="row">
             <div class="col-md-6">
+                <h1>Noticias</h1>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <a href="{{ route('news') }}">
@@ -25,9 +26,15 @@
     </vue-section>
 </section>
 <section>
-    <vue-section title="Eventos" class="bg-dark text-light">
+    <vue-section class="bg-dark text-light">
         <div class="row">
             <div class="col-md-6">
+                <img src="{{ asset('images/events.svg') }}" class="img-fluid" alt="Events images" srcset="">
+            </div>
+            <div class="col-md-6">
+
+                <h1>Eventos</h1>
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <a href="{{ route('events') }}">
@@ -35,16 +42,16 @@
                 </a>
                 <vue-spacer space="20"></vue-spacer>
             </div>
-            <div class="col-md-6">
-                <img src="{{ asset('images/events.svg') }}" class="img-fluid" alt="Events images" srcset="">
-            </div>
+
         </div>
     </vue-section>
 </section>
 <section>
-    <vue-section title="Tienda">
+    <vue-section>
         <div class="row">
             <div class="col-md-6">
+                <h1>Tienda</h1>
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <a href="{{ route('store') }}">
@@ -65,9 +72,14 @@
     </vue-section>
 </section>
 <section>
-    <vue-section title="Artistas" class="bg-dark text-light">
+    <vue-section class="bg-dark text-light">
         <div class="row">
             <div class="col-md-6">
+                <img src="{{ asset('images/artists.svg') }}" class="img-fluid" alt="Imagen de noticias" srcset="">
+            </div>
+            <div class="col-md-6">
+                <h1>Artistas</h1>
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <a href="{{ route('authors') }}">
@@ -75,9 +87,7 @@
                 </a>
                 <vue-spacer space="20"></vue-spacer>
             </div>
-            <div class="col-md-6">
-                <img src="{{ asset('images/artists.svg') }}" class="img-fluid" alt="Imagen de noticias" srcset="">
-            </div>
+
             @foreach ($authors as $author)
             <div class="col-md-4 text-dark">
                 <div class="card">
@@ -93,9 +103,11 @@
     </vue-section>
 </section>
 <section>
-    <vue-section title="Acerca de nosotros">
+    <vue-section>
         <div class="row">
             <div class="col-md-6">
+                <h1>Acerca de nosotros</h1>
+
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
                 <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum molestias ullam fuga quas soluta deleniti voluptatum odio, voluptas impedit sit id eveniet veritatis sunt delectus ipsa, facilis nihil, officia esse.</p>
 
