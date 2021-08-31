@@ -1,0 +1,17 @@
+.btn {
+  font-family: "Hind Madurai", sans-serif;
+  font-size: 1.25em;
+  padding: 0.4em 1.6em;
+  border-radius: 30px;
+}
+
+.btn-danger {
+  color: black;
+  background-color: var(--gray-primary);
+  border: 2px solid var(--accent1);
+}
+
+.btn-danger:hover {
+  color: white;
+  background-color: var(--accent1);
+}

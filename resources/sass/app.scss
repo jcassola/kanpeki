@@ -10,15 +10,10 @@
 // Bootstrap
 @import "~bootstrap/scss/bootstrap";
 
-.btn-danger {
-  color: black;
-  background-color: var(--gray-primary);
-  border: 2px solid var(--accent1);
-}
+@import "./btn";
 
-.btn-danger:hover {
-  color: white;
-  background-color: var(--accent1);
+.color-secondary {
+  color: var(--color-secondary) !important;
 }
 
 h1,
@@ -48,13 +43,6 @@ body {
   body {
     font-size: 1rem;
   }
-}
-
-.btn {
-  font-family: "Hind Madurai", sans-serif;
-  font-size: 1.25em;
-  padding: 0.4em 1.6em;
-  border-radius: 30px;
 }
 
 .jumbotron {
