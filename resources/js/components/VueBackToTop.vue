@@ -56,6 +56,8 @@ export default {
   width: 80px;
   height: 80px;
   font-size: 3em; /* Increase font size */
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
 #floating-button:hover {
