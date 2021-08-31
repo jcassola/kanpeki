@@ -34,9 +34,13 @@
         <bootstrap-navbar current-route="@yield('route')">
             <!-- Authentication Links -->
             @guest
-            <li class="nav-item">
-                <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
-            </li>
+            <template #append>
+                <a class="nav-link" href="{{ route('login') }}">
+                    <button class="btn btn-primary">
+                        {{ __('Login') }}
+                    </button>
+                </a>
+            </template>
             @if (Route::has('register'))
             <li class="nav-item">
                 <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
