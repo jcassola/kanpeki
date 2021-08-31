@@ -50,9 +50,21 @@ h1 {
   font-size: 3rem;
 }
 
+@media screen and (min-width: 576px) {
+  h1 {
+    font-size: 2rem;
+  }
+}
+
 body {
   font-family: "Hind Madurai", sans-serif;
   font-size: 1.25rem;
+}
+
+@media screen and (min-width: 576px) {
+  body {
+    font-size: 1rem;
+  }
 }
 
 .btn {
