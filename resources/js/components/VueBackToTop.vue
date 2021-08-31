@@ -50,7 +50,7 @@ export default {
   z-index: 99; /* Make sure it does not overlap */
   border: none; /* Remove borders */
   outline: none; /* Remove outline */
-  background-color: #007344; /* Set a background color */
+  background-color: var(--accent2); /* Set a background color */
   color: white; /* Text color */
   border-radius: 50%; /* Rounded corners */
   width: 80px;
@@ -59,6 +59,6 @@ export default {
 }
 
 #floating-button:hover {
-  background-color: #719d43; /* Add a dark-grey background on hover */
+  background-color: var(--accent3); /* Add a dark-grey background on hover */
 }
 </style>
