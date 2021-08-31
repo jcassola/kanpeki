@@ -2,7 +2,7 @@
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
     <div class="container">
       <a class="navbar-brand" href="/">
-        <img src="/images/logo-navbar.png" alt="Logo" style="width:80px;" />
+        <img src="/images/logo-navbar.png" alt="Logo" style="width: 80px" />
       </a>
       <button
         class="navbar-toggler"
@@ -18,10 +18,14 @@
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <!-- Right Side Of Navbar -->
-        <bootstrap-navbar-links :user-name="userName" :current-route="currentRoute">
+        <bootstrap-navbar-links
+          :user-name="userName"
+          :current-route="currentRoute"
+        >
           <!-- Authentication Links -->
           <slot></slot>
         </bootstrap-navbar-links>
+        <slot name="append"></slot>
       </div>
     </div>
   </nav>
@@ -30,6 +34,6 @@
 <script>
 export default {
   props: ["userName", "currentRoute"],
-  name: "BootstrapNavbar",
+  name: "BootstrapNavbar"
 };
 </script>
