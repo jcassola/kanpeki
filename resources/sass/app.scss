@@ -12,12 +12,11 @@
 
 :root,
 [data-theme="default"] {
-  --bg-color-primary: #343a40;
-  --bg-color-secondary: #e9ecef;
-  --bg-color-tertiary: #ff041d;
-  --bg-color-quaternary: #007344;
-  --color-primary: white;
-  --color-secondary: black;
+  --color-primary: #f0ead6;
+  --gray-primary: hsl(46, 46%, 95%);
+  --color-secondary: #291720;
+  --accent1: #ff041d;
+  --accent2: #04a777;
 }
 
 [data-theme="light"] {
