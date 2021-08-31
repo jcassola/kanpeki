@@ -62,6 +62,8 @@ export default {
 }
 
 #floating-button:hover {
-  background-color: var(--accent3); /* Add a dark-grey background on hover */
+  background-color: var(
+    --accent2-light
+  ); /* Add a dark-grey background on hover */
 }
 </style>
